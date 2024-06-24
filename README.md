@@ -1,16 +1,20 @@
-# About
-This repository contains the theme files for the VSCode theme <a href="example.com">Midnight Xenon</a>.
+<h1>About</h1>
+This repository contains the theme files for the VSCode theme <a href="example.com">Dark Xenon</a>.
 
-This theme is a modification of the default dark theme for VSCode and primarily aims to:
-- Improve the cross-language consistency of syntax highlighting when semantic highlighting is enabled
-- Maintain standard syntax highlighting colors and avoid overcoloring your text editor
-- Provide a more attractive and stylized UI
+This theme aims to maintain similar syntax highlighting to the default Dark Modern theme while:
 
-# Comparison
+<ul>
+<li>Improving the cross-language consistency of syntax highlighting when semantic highlighting is enabled</li>
+<li>Make subjective improvements to certain syntax colors, such as in-line comments being more muted</li>
+<li>Providing more attractive and stylized UI colors</li>
+</ul>
+
+<h1>Comparison</h1>
 
 <img src="https://github.com/MitchMedeiros/midnight-xenon/blob/9efd8832e0ffeae3f6e04b566f0d4d962bfa1f78/images/improved/python.png">
 
-# Syntax Highlighting
+<h1>Syntax Highlighting</h1>
+
 The below languages are currently customized. Each language depend on a popular extension which provides appropriate scopes for the tokenized text.
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a> (preinstalled)
@@ -22,13 +26,17 @@ The below languages are currently customized. Each language depend on a popular 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
 
 File Types:
-- JSON
-- txt
-- XML
+
+<ul>
+<li>JSON</li>
+<li>txt</li>
+<li>XML</li>
+</ul>
 
 Languages and file types not listed will use the same syntax highlighting as Dark Modern.
 
-## Syntax Colors
+<h2>Syntax Colors</h2>
+
 - Imports - #c2ff9e
 - Classes - #2edcb7
 - Methods - #DCDCAA
@@ -44,12 +52,14 @@ Languages and file types not listed will use the same syntax highlighting as Dar
 - Punctuation - #D4D4D4
 - Operators - #D4D4D4
 
-## Customizing Syntax Colors
+<h2>Customizing Syntax Colors</h2>
+
 You can add or modify a particular syntax color to your preferences by
 
-1) Opening the "Inspect Editor Tokens and Scopes" tools in VSCode and placing your cursor with text you want to change
-2) Copying one of the listed textmate scopes (using the most specific scope will reduce the risk of accidentally recoloring other tokens)
-3) Add a textmate rule to your VSCode settings.json file with the following format:
+<ol>
+<li>Opening the "Inspect Editor Tokens and Scopes" tools in VSCode and placing your cursor with text you want to change</li>
+<li>Copying one of the listed textmate scopes (using the most specific scope will reduce the risk of accidentally recoloring other tokens)</li>
+<li>Add a textmate rule to your VSCode settings.json file with the following format:
 ```json
 "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -62,5 +72,7 @@ You can add or modify a particular syntax color to your preferences by
     ]
 }
 ```
+</li>
+<ol>
 
 It may be the case that two or more distinct code elements have only a single textmate scope which is shared across them. If you wish for their colors to differ you will need to either find an extension which adds distinct scopes for them or <a href="https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide">manually add your own</a>.
