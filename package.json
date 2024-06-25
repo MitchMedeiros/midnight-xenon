@@ -2,7 +2,10 @@
   "name": "midnight-xenon",
   "displayName": "Midnight Xenon",
   "description": "A dark minimalistic theme with neon blue accents and consistent syntax highlighting.",
-  "version": "0.0.1",
+  "publisher": "Mitchell Medeiros",
+  "icon": "images/logo.png",
+  "license": "MIT",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -18,13 +21,8 @@
       }
     ]
   },
-  "author": {
-    "name": "Mitchell Medeiros"
-  },
-  "icon": "images/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MitchMedeiros/dark-xenon"
-  },
-  "license": "MIT"
+    "url": "https://github.com/MitchMedeiros/midnight-xenon"
+  }
 }

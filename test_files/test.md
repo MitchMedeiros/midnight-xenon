@@ -1,10 +1,10 @@
 
-This theme aims to maintain similar syntax highlighting and ease of code readability as the default Dark Modern and Dark+ themes while:
+This theme aims to maintain similar syntax highlighting and ease of code readability as the default Dark Modern theme while:
 
 <ul>
 <li>Improving the cross-language consistency of syntax highlighting with semantic highlighting enabled</li>
-<li>Making minor improvements to certain syntax colors, such as in-line comments being more muted, imported libraries/modules having a unique color, etc</li>
-<li>Providing a more minimalistic UI with a deep blue and neon color scheme</li>
+<li>Making minor improvements to certain syntax colors, such as in-line comments being more muted, imported libraries not using the same color as classes, etc</li>
+<li>Providing a cleaner, more minimalistic UI with style</li>
 </ul>
 
 <h2>Theme Example Photos</h2>
@@ -13,11 +13,9 @@ Looks best when UI elements are hidden and keyboard shortcuts are used to naviga
 
 <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/theme_examples/python.png">
 
-With the full UI visible:
-
 <h2>Syntax Highlighting</h2>
 
-In general, to benefit from syntax highlighting a language server (LSP) extension for the programming language(s) you're interested in is needed. This theme addresses the fact that different LSPs tokenize and attach scopes to text differently by explicitly listing the LSP needed for a particular language in order to get consistent cross-language highlighting. The most popular LSPs are recommended for the below languages:
+In general, to benefit from syntax highlighting a language server (LSP) "some string" extension for the programming language(s) you're interested in is needed. This theme addresses the fact that different LSPs tokenize and attach scopes to text differently by explicitly listing the LSP needed for a particular language in order to get consistent cross-language highlighting. The most popular LSPs are recommended for the below languages:
 
 - <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/python.png" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a>
 
