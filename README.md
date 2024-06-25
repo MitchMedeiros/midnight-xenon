@@ -17,13 +17,13 @@ This theme aims to maintain similar syntax highlighting to the default Dark Mode
 
 The below languages are currently customized. Each language depend on a popular extension which provides appropriate scopes for the tokenized text.
 
-<img src="images/python.png" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a> (preinstalled)
+<img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/python.png" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a> (preinstalled)
 
-<img src="images/java.png" width="17"> Java - Requires <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java</a>
+<img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/java.png" width="17"> Java - Requires <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java</a>
 
-<img src="images/scala.png" width="17"> Scala - Requires <a href="https://marketplace.visualstudio.com/items?itemName=scala-lang.scala">Scala Syntax</a> (also installed with <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a>)
+<img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/scala.png" width="17"> Scala - Requires <a href="https://marketplace.visualstudio.com/items?itemName=scala-lang.scala">Scala Syntax</a> (also installed with <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a>)
 
-<img src="images/lua.png" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
+<img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/lua.png" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
 
 File Types:
 

@@ -21,9 +21,10 @@
   "author": {
     "name": "Mitchell Medeiros"
   },
-  "icon": "images/xenon_logo.jpeg",
+  "icon": "images/xenon_logo.jpg",
   "repository": {
     "type": "git",
     "url": "https://github.com/MitchMedeiros/dark-xenon"
-  }
+  },
+  "license": "MIT"
 }
