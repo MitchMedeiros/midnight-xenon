@@ -1,3 +1,4 @@
+<h1>Midnight Xenon Theme</h1>
 
 This theme aims to maintain similar syntax highlighting and ease of code readability as the default Dark Modern and Dark+ themes while:
 
