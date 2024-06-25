@@ -3,7 +3,9 @@ node_modules
 .bsp
 .metals
 .scala-build
-.DS_Store
 .mypy_cache
+.DS_Store
+test_files.DS_Store
 images/.DS_Store
+themes/.DS_Store
 .vscode/settings.json

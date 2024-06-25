@@ -11,17 +11,19 @@ This theme aims to maintain similar syntax highlighting and ease of code readabi
 
 Looks best when unneeded UI elements are removed from view and keyboard shortcuts are used to navigate instead!
 
+<img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/theme_examples/python.png" width="19">
+
 <h2>Syntax Highlighting</h2>
 
 In general, to benefit from syntax highlighting a language server (LSP) extension for the programming language(s) you're interested in is needed. This theme addresses the fact that different LSPs tokenize and attach scopes to text differently by explicitly listing the LSP needed for a particular language in order to get consistent cross-language highlighting. The most popular LSPs are recommended for the below languages:
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/python.png" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a>
+- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/python.png" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a>
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/java.png" width="17"> Java - Requires <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java</a>
+- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/java.png" width="17"> Java - Requires <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java</a>
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/scala.png" width="17"> Scala - Requires <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a>
+- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/scala.png" width="17"> Scala - Requires <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a>
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/lua.png" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
+- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/lua.png" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
 
 | Scope                | Color                                              | HEX       |
 | -------------------- | -------------------------------------------------- | --------- |
