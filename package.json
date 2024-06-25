@@ -1,7 +1,7 @@
 {
   "name": "dark-xenon",
   "displayName": "Dark Xenon",
-  "description": "An improvement on the Dark Modern theme.",
+  "description": "A dark minimalistic theme with neon blue accents and consistent syntax highlighting.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.90.0"
@@ -17,5 +17,13 @@
         "path": "./themes/Dark Xenon-color-theme.json"
       }
     ]
+  },
+  "author": {
+    "name": "Mitchell Medeiros"
+  },
+  "icon": "images/xenon_logo.jpeg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MitchMedeiros/dark-xenon"
   }
 }

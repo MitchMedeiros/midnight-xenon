@@ -11,19 +11,19 @@ This theme aims to maintain similar syntax highlighting to the default Dark Mode
 
 <h1>Comparison</h1>
 
-<img src="https://github.com/MitchMedeiros/midnight-xenon/blob/9efd8832e0ffeae3f6e04b566f0d4d962bfa1f78/images/improved/python.png">
+...
 
 <h1>Syntax Highlighting</h1>
 
 The below languages are currently customized. Each language depend on a popular extension which provides appropriate scopes for the tokenized text.
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a> (preinstalled)
+<img src="images/python.png" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a> (preinstalled)
 
-<img src="https://cdn.jsdelivr.net/gh/MitchMedeiros/MitchMedeiros@85ebeb02576a02087114b63f193b4471aa372c20/images/java-white.svg" width="17"> Java - Requires <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java</a>
+<img src="images/java.png" width="17"> Java - Requires <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java</a>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scala/scala-original.svg" width="17"> Scala - Requires <a href="https://marketplace.visualstudio.com/items?itemName=scala-lang.scala">Scala Syntax</a> (also installed with <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a>)
+<img src="images/scala.png" width="17"> Scala - Requires <a href="https://marketplace.visualstudio.com/items?itemName=scala-lang.scala">Scala Syntax</a> (also installed with <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a>)
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
+<img src="images/lua.png" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
 
 File Types:
 
