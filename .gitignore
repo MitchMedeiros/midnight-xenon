@@ -1,4 +1,9 @@
 node_modules
 *.vsix
+.bsp
+.metals
+.scala-build
 .DS_Store
+.mypy_cache
 images/.DS_Store
+.vscode/settings.json
