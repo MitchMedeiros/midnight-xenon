@@ -1,6 +1,6 @@
 {
-  "name": "dark-xenon",
-  "displayName": "Dark Xenon",
+  "name": "midnight-xenon",
+  "displayName": "Midnight Xenon",
   "description": "A dark minimalistic theme with neon blue accents and consistent syntax highlighting.",
   "version": "0.0.1",
   "engines": {
@@ -12,16 +12,16 @@
   "contributes": {
     "themes": [
       {
-        "label": "Dark Xenon",
+        "label": "Midnight Xenon",
         "uiTheme": "vs-dark",
-        "path": "./themes/Dark Xenon-color-theme.json"
+        "path": "./themes/Midnight Xenon-color-theme.json"
       }
     ]
   },
   "author": {
     "name": "Mitchell Medeiros"
   },
-  "icon": "images/xenon_logo.jpg",
+  "icon": "images/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/MitchMedeiros/dark-xenon"
