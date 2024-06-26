@@ -19,7 +19,7 @@ class Circle:
     def __init__(self, radius: float, color: Optional[str] = None):
         assert radius >= 0, "Radius must be a positive number."
 
-        if not isinstance(color, str):
+        if color and not isinstance(color, str):
             raise ValueError("Color must be a string.")
 
         self.radius = radius

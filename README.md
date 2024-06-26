@@ -33,15 +33,16 @@ In general, to benefit from syntax highlighting a language server (LSP) extensio
 | Class                | ![#2EDCB7](https://fakeimg.pl/35/2EDCB7/?text=+)   | #2EDCB7   |
 | Method/Function      | ![#DCDCAA](https://fakeimg.pl/35/DCDCAA/?text=+)   | #DCDCAA   |
 | Variable             | ![#9CDCFE](https://fakeimg.pl/35/9CDCFE/?text=+)   | #9CDCFE   |
+| self/this            | ![#B9CEDA](https://fakeimg.pl/35/B9CEDA/?text=+)   | #B9CEDA   |
+| Imported Library     | ![#C2FF9E](https://fakeimg.pl/35/C2FF9E/?text=+)   | #C2FF9E   |
 | Flow Keyword         | ![#C586C0](https://fakeimg.pl/35/C586C0/?text=+)   | #C586C0   |
-| Logic Keyword        | ![#C586C0](https://fakeimg.pl/35/C586C0/?text=+)   | #C586C0   |
-| Import               | ![##C2FF9E](https://fakeimg.pl/35/C2FF9E/?text=+)  | #C2FF9E   |
-| String               | ![#F3C785](https://fakeimg.pl/35/F3C785/?text=+)   | #F3C785   |
+| Logic Keyword        | ![#7C99F0](https://fakeimg.pl/35/7C99F0/?text=+)   | #7C99F0   |
+| Definition Keyword   | ![#22ADF8](https://fakeimg.pl/35/22ADF8/?text=+)   | #22ADF8   |
+| Constant             | ![#22ADF8](https://fakeimg.pl/35/22ADF8/?text=+)   | #22ADF8   |
 | Number               | ![#B5CEA8](https://fakeimg.pl/35/B5CEA8/?text=+)   | #B5CEA8   |
-| Constant             | ![#10B1FE](https://fakeimg.pl/35/10B1FE/?text=+)   | #10B1FE   |
+| String               | ![#F3C785](https://fakeimg.pl/35/F3C785/?text=+)   | #F3C785   |
 | Comment              | ![#C9C9C9BC](https://fakeimg.pl/35/C9C9C9/?text=+) | #C9C9C9BC |
 | Operator/Punctuation | ![#D4D4D4](https://fakeimg.pl/35/D4D4D4/?text=+)   | #D4D4D4   |
-| self/this Keyword    | ![#B6C8C6](https://fakeimg.pl/35/B6C8C6/?text=+)   | #B6C8C6   |
 
 <h2>Customizing Syntax Colors</h2>
 

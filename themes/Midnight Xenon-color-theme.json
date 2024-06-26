@@ -10,7 +10,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#60737d"
+				"foreground": "#60737D"
 			}
 		},
 		{
@@ -20,7 +20,7 @@
 				"punctuation.definition.string",
 			],
 			"settings": {
-				"foreground": "#eebc70"
+				"foreground": "#EEBC70"
 			}
 		},
 		{
@@ -55,7 +55,7 @@
 				"support.class",
 			],
 			"settings": {
-				"foreground": "#30e5be"
+				"foreground": "#30E5BE"
 			}
 		},
 		{
@@ -98,20 +98,29 @@
 				"support.type",
 			],
 			"settings": {
-				"foreground": "#30e5be"
+				"foreground": "#30E5BE"
 			}
 		},
 		{
-			"name": "Flow/Logic Keyword",
+			"name": "Flow Keyword",
 			"scope": [
 				"keyword",
 				"keyword.control.flow",
 				"keyword.operator.logical",
 				"keyword.other.import",
-				"storage.modifier"
 			],
 			"settings": {
 				"foreground": "#C586C0"
+			}
+		},
+		{
+			"name": "Logic Keyword",
+			"scope": [
+				"keyword.operator.logical",
+				"storage.modifier"
+			],
+			"settings": {
+				"foreground": "#7C99F0"
 			}
 		},
 		{
@@ -122,29 +131,11 @@
 				"entity.name.tag.html",
 			],
 			"settings": {
-				"foreground": "#4FC1FF" // "#569CD6"
+				"foreground": "#22ADF8"
 			}
 		},
 		{
-			"name": "Self/This Keyword",
-			"scope": [
-				"variable.parameter.function.language.special.self",
-			],
-			"settings": {
-				"foreground": "#b6c8c6",
-			}
-		},
-		{
-			"name": "Off-white text",
-			"scope": [
-				"punctuation.definition.tag",
-			],
-			"settings": {
-				"foreground": "#a6b3b1",
-			}
-		},
-		{
-			"name": "None/Constant/escape character",
+			"name": "Constant/escape character",
 			"scope": [
 				"constant.language",
 				"support.constant",
@@ -153,7 +144,25 @@
 				"keyword.other.unit",
 			],
 			"settings": {
-				"foreground": "#569CD6"
+				"foreground": "#22ADF8"
+			}
+		},
+		{
+			"name": "Self/This Keyword",
+			"scope": [
+				"variable.parameter.function.language.special.self",
+			],
+			"settings": {
+				"foreground": "#B9CEDA",
+			}
+		},
+		{
+			"name": "Off-white text",
+			"scope": [
+				"punctuation.definition.tag",
+			],
+			"settings": {
+				"foreground": "#A6B3B1",
 			}
 		},
 		{
@@ -173,7 +182,7 @@
 				"meta.import",
 			],
 			"settings": {
-				"foreground": "#c2ff9e"
+				"foreground": "#C2FF9E"
 			}
 		},
 		{
