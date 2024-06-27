@@ -8,52 +8,6 @@
 	},
 	"tokenColors": [
 		{
-			"name": "Comment",
-			"scope": [
-				"comment.line.number-sign.python",
-				"comment.line.double-slash.scala",
-				"punctuation.definition.comment.python",
-				"comment.line.double-slash.js",
-				"punctuation.definition.comment.json.comments",
-			],
-			"settings": {
-				"foreground": "#60737D"
-			}
-		},
-		{
-			"name": "String",
-			"scope": [
-				"string",
-				"punctuation.definition.string",
-				"comment.block.documentation.scala",
-				"string.quoted.docstring"
-			],
-			"settings": {
-				"foreground": "#EEBC70"
-			}
-		},
-		{
-			"name": "Punctuation",
-			"scope": [
-				// "punctuation",
-				"punctuation.separator",
-				"punctuation.section",
-			],
-			"settings": {
-				"foreground": "#D4D4D4"
-			}
-		},
-		{
-			"name": "Number",
-			"scope": [
-				"number",
-				"constant.numeric",
-			],
-			"settings": {
-				"foreground": "#B5CEA8"
-			}
-		},
-		{
 			"name": "Class",
 			"scope": [
 				"class",
@@ -61,6 +15,7 @@
 				"entity.name.class",
 				"entity.other.inherited-class",
 				"support.class",
+				"storage.type.annotation.java",
 			],
 			"settings": {
 				"foreground": "#30E5BE"
@@ -74,9 +29,11 @@
 				"entity.name.function",
 				"entity.name.method",
 				"support.function",
+				"support.variable.magic.python",
+				"support.function.magic.python",
 			],
 			"settings": {
-				"foreground": "#DCDCAA"
+				"foreground": "#FFFFA8"
 			}
 		},
 		{
@@ -88,25 +45,41 @@
 				"variable.other.property",
 				"variable.other.readwrite",
 				"variable.other.constant",
+				"support.variable.magic.python",
 				"variable.stable",
 				"variable.volatile",
 				"variable.function",
 				"variable.function.constructor",
-				"support.type.property-name.json.comments",
+				"support.type.property-name.json",
 				"entity.other.attribute-name.html"
 			],
 			"settings": {
-				"foreground": "#9CDCFE"
+				"foreground": "#88D5FF"
 			}
 		},
 		{
-			"name": "Type",
+			"name": "Primitive/Constant/escape character",
 			"scope": [
-				"entity.name.type",
-				"support.type",
+				"constant.language",
+				"support.constant",
+				"constant.character",
+				"constant.escape",
+				"keyword.other.unit",
+				"storage.type.primitive.java",
 			],
 			"settings": {
-				"foreground": "#30E5BE"
+				"foreground": "#AEFF7F"
+			}
+		},
+		{
+			"name": "Library/Module",
+			"scope": [
+				"entity.name.namespace",
+				"entity.name.import",
+				"meta.import",
+			],
+			"settings": {
+				"foreground": "#8F97FF"
 			}
 		},
 		{
@@ -115,20 +88,13 @@
 				"keyword.control.flow",
 				"keyword.operator.logical",
 				"keyword.other.import",
-				"keyword.control.import.python"
+				"keyword.control.import.python",
+				"keyword.control.java",
+				"keyword.control.throw",
+				"keyword.other.package.java",
 			],
 			"settings": {
 				"foreground": "#C586C0"
-			}
-		},
-		{
-			"name": "Logic Keyword",
-			"scope": [
-				"keyword.operator.logical",
-				"storage.modifier"
-			],
-			"settings": {
-				"foreground": "#7C99F0"
 			}
 		},
 		{
@@ -142,19 +108,20 @@
 				"keyword.interpolation.scala",
 				"punctuation.definition.template-expression.begin.scala",
 				"entity.name.tag.html",
+				"storage.modifier.extends.java",
+				"storage.modifier.java",
+				"keyword.control.new.java",
+				"storage.modifier.other"
 			],
 			"settings": {
 				"foreground": "#22ADF8"
 			}
 		},
 		{
-			"name": "Constant/escape character",
+			"name": "Logic Keyword",
 			"scope": [
-				"constant.language",
-				"support.constant",
-				"constant.character",
-				"constant.escape",
-				"keyword.other.unit",
+				"keyword.operator.logical",
+				"storage.modifier"
 			],
 			"settings": {
 				"foreground": "#22ADF8"
@@ -164,9 +131,75 @@
 			"name": "Self/This Keyword",
 			"scope": [
 				"variable.parameter.function.language.special.self",
+				"variable.language.scala",
+				"variable.language.this.java",
 			],
 			"settings": {
 				"foreground": "#B9CEDA",
+			}
+		},
+		{
+			"name": "Number",
+			"scope": [
+				"number",
+				"constant.numeric",
+			],
+			"settings": {
+				"foreground": "#B5CEA8"
+			}
+		},
+		{
+			"name": "String",
+			"scope": [
+				"string",
+				"punctuation.definition.string",
+				"comment.block.documentation.scala",
+				"string.quoted.docstring",
+				"comment.block.javadoc.java",
+			],
+			"settings": {
+				"foreground": "#EEBC70"
+			}
+		},
+		{
+			"name": "Comment",
+			"scope": [
+				"comment.line.number-sign.python",
+				"punctuation.definition.comment.python",
+				"punctuation.definition.comment.json.comments",
+				"comment.line.double-slash",
+			],
+			"settings": {
+				"foreground": "#60737D"
+			}
+		},
+		{
+			"name": "Operator",
+			"scope": [
+				"keyword.operator"
+			],
+			"settings": {
+				"foreground": "#D4D4D4"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": [
+				"punctuation.separator",
+				"punctuation.section",
+			],
+			"settings": {
+				"foreground": "#D4D4D4"
+			}
+		},
+		{
+			"name": "Type",
+			"scope": [
+				"entity.name.type",
+				"support.type",
+			],
+			"settings": {
+				"foreground": "#30E5BE"
 			}
 		},
 		{
@@ -183,26 +216,6 @@
 			],
 			"settings": {
 				"foreground": "#A6B3B1",
-			}
-		},
-		{
-			"name": "Binary Operator",
-			"scope": [
-				"keyword.operator"
-			],
-			"settings": {
-				"foreground": "#D4D4D4"
-			}
-		},
-		{
-			"name": "Imported Library/Module",
-			"scope": [
-				"entity.name.namespace",
-				"entity.name.import",
-				"meta.import",
-			],
-			"settings": {
-				"foreground": "#C2FF9E"
 			}
 		},
 		{
