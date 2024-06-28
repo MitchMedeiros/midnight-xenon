@@ -1,11 +1,11 @@
 {
   "name": "midnight-xenon",
-  "displayName": "Midnight Xenon",
-  "description": "A dark minimalistic theme with neon blue accents and consistent syntax highlighting.",
+  "displayName": "Midnight Xenon Theme",
+  "description": "A minimalistic theme with consistent syntax highlighting inspired by Dark Modern.",
   "publisher": "Mitchell Medeiros",
-  "icon": "images/logo.png",
+  "icon": "assets/logo.png",
   "license": "MIT",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -15,9 +15,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Midnight Xenon",
+        "label": "Midnight Xenon Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/Midnight Xenon-color-theme.json"
+        "path": "./themes/midnight-xenon-color-theme.json"
       }
     ]
   },

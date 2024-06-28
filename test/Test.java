@@ -1,4 +1,4 @@
-package test_files;
+package test;
 
 import java.util.Optional;
 

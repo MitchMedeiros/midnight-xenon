@@ -58,7 +58,7 @@ This
 
 Inline `code span in a` paragraph.
 
-This is a code block:
+Code block:
 
     /**
      * Sorts the specified array into ascending numerical order.

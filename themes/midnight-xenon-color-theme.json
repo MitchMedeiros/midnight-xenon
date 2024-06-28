@@ -1,12 +1,18 @@
 {
 	"name": "Dark Xenon",
 	"semanticHighlighting": true,
-	"semanticTokenColors": {
-		// "class.decorator": {
-		// 	"foreground": "#D6D6D6",
-		// }
-	},
+	"semanticTokenColors": {},
 	"tokenColors": [
+		{
+			"name": "Type",
+			"scope": [
+				"entity.name.type",
+				"support.type",
+			],
+			"settings": {
+				"foreground": "#30E5BE"
+			}
+		},
 		{
 			"name": "Class",
 			"scope": [
@@ -209,16 +215,6 @@
 			}
 		},
 		{
-			"name": "Type",
-			"scope": [
-				"entity.name.type",
-				"support.type",
-			],
-			"settings": {
-				"foreground": "#30E5BE"
-			}
-		},
-		{
 			"name": "Single Braces",
 			"scope": [
 				"punctuation.definition.dict.begin.python",
@@ -228,6 +224,19 @@
 			],
 			"settings": {
 				"foreground": "#F9D849"
+			}
+		},
+		{
+			"name": "Plain Text",
+			"scope": [
+				"meta.paragraph.markdown",
+				"markup.table",
+				"punctuation.definition.list_item.markdown",
+				"text.html",
+				"text.xml",
+			],
+			"settings": {
+				"foreground": "#D5E4E4"
 			}
 		},
 		{
@@ -279,19 +288,6 @@
 			}
 		},
 		{
-			"name": "Plain Text",
-			"scope": [
-				"meta.paragraph.markdown",
-				"markup.table",
-				"punctuation.definition.list_item.markdown",
-				"text.html",
-				"text.xml",
-			],
-			"settings": {
-				"foreground": "#D5E4E4"
-			}
-		},
-		{
 			"name": "Markup - Heading",
 			"scope": [
 				"markup.heading",
@@ -319,6 +315,8 @@
 				"punctuation.definition.quote.begin.markdown",
 				"punctuation.definition.table.markdown",
 				"punctuation.separator.table.markdown",
+				"punctuation.definition.markdown",
+				"punctuation.definition.raw.markdown",
 			],
 			"settings": {
 				"foreground": "#8F97FF"
@@ -331,6 +329,7 @@
 				"markup.quote.markdown meta.paragraph.markdown",
 				"markup.raw.block",
 				"markup.fenced_code.block",
+				"markup.inline.raw.string.markdown",
 			],
 			"settings": {
 				"foreground": "#B5CEA8"
@@ -619,9 +618,9 @@
 		"button.secondaryForeground": "#000000",
 		"button.secondaryHoverBackground": "#2f95d5",
 		// Checkbox
-		"checkbox.background": "#afafaf",
+		"checkbox.background": "#39b3ff",
 		"checkbox.foreground": "#000000",
-		"checkbox.border": "#00000000",
+		"checkbox.border": "#000000",
 		"checkbox.selectBackground": "#39b3ff",
 		"checkbox.selectBorder": "#00000000",
 		// Badge
@@ -652,9 +651,9 @@
 		// "toolbar.activeBackground": "#ff0000",
 		// Settings Page
 		"settings.modifiedItemIndicator": "#5dc1ff",
-		"settings.checkboxBackground": "#afafaf",
+		"settings.checkboxBackground": "#39b3ff",
 		"settings.checkboxForeground": "#000000",
-		"settings.checkboxBorder": "#00000000",
+		"settings.checkboxBorder": "#000000",
 		"settings.dropdownBackground": "#14171b",
 		"settings.dropdownForeground": "#c4d0d4",
 		"settings.dropdownBorder": "#00000000",
@@ -703,11 +702,26 @@
 		// Git
 		"gitDecoration.modifiedResourceForeground": "#73c9fd",
 		// Profile Badge
-		// "profileBadge.background": "#3f3f3f",
-		// "profileBadge.foreground": "#000000",
+		"profileBadge.background": "#5dc1ff",
+		"profileBadge.foreground": "#000000",
+		// Peak View
+		"peekView.border": "#5dc1ff3e",
+		"peekViewEditor.background": "#181b20",
+		"peekViewEditorGutter.background": "#181b20",
+		"peekViewResult.background": "#181b20",
+		"peekViewEditor.matchHighlightBackground": "#755dff93",
+		"peekViewResult.matchHighlightBackground": "#755dff93",
+		// Jupyter Notebook Colors
+		"notebook.editorBackground": "#22282f",
+		"notebook.cellEditorBackground": "#181b20",
+		"notebook.cellBorderColor": "#32384292",
+		"notebook.focusedCellBorder": "#5dc1ff",
+		"notebook.focusedEditorBorder": "#5dc1ff3e",
+		"notebook.inactiveFocusedCellBorder": "#5dc1ff1f",
+		"notebook.inactiveSelectedCellBorder": "#5dc1ff1f",
+		"notebook.outputContainerBorderColor": "#578be692",
 		///////////////////////////////////////////////////////////////////
 		///////////////////////////////////////////////////////////////////
-		// Modern Dark Defaults
 		"actionBar.toggledBackground": "#383a49",
 		"activityBarBadge.background": "#0078d4",
 		"activityBarBadge.foreground": "#ffffff",
@@ -735,10 +749,6 @@
 		"notifications.border": "#2b2b2b",
 		"notifications.foreground": "#cccccc",
 		"panelInput.border": "#2b2b2b",
-		"peekViewEditor.background": "#1f1f1f",
-		"peekViewEditor.matchHighlightBackground": "#bb800966",
-		"peekViewResult.background": "#1f1f1f",
-		"peekViewResult.matchHighlightBackground": "#bb800966",
 		"pickerGroup.border": "#3c3c3c",
 		"ports.iconRunningProcessForeground": "#369432",
 		"progressBar.background": "#0078d4",
