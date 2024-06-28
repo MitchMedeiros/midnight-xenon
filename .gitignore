@@ -5,8 +5,8 @@ node_modules
 .scala-build
 .mypy_cache
 .DS_Store
-test_files.DS_Store
-images/.DS_Store
-themes/.DS_Store
 .vscode/settings.json
-test_files/more_tests
+test/.DS_Store
+test/more_tests
+assets/.DS_Store
+themes/.DS_Store
