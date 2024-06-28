@@ -29,6 +29,16 @@ In order to solve this, it is necessary to declare the language server (LSP) ext
 
 - <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/lua.png" width="17"> Lua - <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
 
+File Types:
+
+- JSON
+- XML
+- YAML
+- .env - <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotENV</a> recommended for full highlighting
+- Markdown
+- HTML
+- CSS
+
 <h3>Color Palette</h3>
 
 | Scope                | Color                                              | HEX       |
@@ -47,7 +57,9 @@ In order to solve this, it is necessary to declare the language server (LSP) ext
 | Comment              | ![#C9C9C9BC](https://fakeimg.pl/35/C9C9C9/?text=+) | #C9C9C9BC |
 | Operator/Punctuation | ![#D4D4D4](https://fakeimg.pl/35/D4D4D4/?text=+)   | #D4D4D4   |
 
-<h3>Differences in Colors vs Dark Modern/Dark+</h3>
+<h3>
+    Differences in Colors vs Dark Modern/Dark+
+</h3>
 
 - Imported libraries and modules receive a unique color rather than sharing the same color as classes
 - Primitive types have a unique color to differentiate them from wrapper class objects
@@ -58,7 +70,7 @@ In order to solve this, it is necessary to declare the language server (LSP) ext
 
 Add fully consistent highlighting for:
 
-- env, xml, md, html, css, ini
+- html, css
 - SQL
 - C
 - C++

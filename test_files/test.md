@@ -1,67 +1,149 @@
+## Text Formatting
 
-This theme aims to maintain similar syntax highlighting and ease of code readability as the default Dark Modern theme while:
+Normal paragraph line
 
-<ul>
-<li>Improving the cross-language consistency of syntax highlighting with semantic highlighting enabled</li>
-<li>Making minor improvements to certain syntax colors, such as in-line comments being more muted, imported libraries not using the same color as classes, etc</li>
-<li>Providing a cleaner, more minimalistic UI with style</li>
-</ul>
+_italic text._ 
 
-<h2>Theme Example Photos</h2>
+**bold text.**
 
-Looks best when UI elements are hidden and keyboard shortcuts are used to navigate instead!
+**_bold italic text_**
 
-<img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/theme_examples/python.png">
+~~strikethrough text~~
 
-<h2>Syntax Highlighting</h2>
+~~**strikethrough bold**~~
 
-In general, to benefit from syntax highlighting a language server (LSP) "some string" extension for the programming language(s) you're interested in is needed. This theme addresses the fact that different LSPs tokenize and attach scopes to text differently by explicitly listing the LSP needed for a particular language in order to get consistent cross-language highlighting. The most popular LSPs are recommended for the below languages:
+~~_strikethrough italic_~~
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/python.png" width="19"> Python - Requires <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance">Pylance</a>
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/java.png" width="17"> Java - Requires <a href="https://marketplace.visualstudio.com/items?itemName=redhat.java">Language Support for Java</a>
+## Links
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/scala.png" width="17"> Scala - Requires <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a>
+Autolink: <http://example.com>
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/lua.png" width="17"> Lua - Requires <a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua Language Server</a>
+Link: [Example](http://example.com)
 
-| Scope                | Color                                              | HEX       |
-| -------------------- | -------------------------------------------------- | --------- |
-| Class                | ![#2EDCB7](https://fakeimg.pl/35/2EDCB7/?text=+)   | #2EDCB7   |
-| Method/Function      | ![#DCDCAA](https://fakeimg.pl/35/DCDCAA/?text=+)   | #DCDCAA   |
-| Variable             | ![#9CDCFE](https://fakeimg.pl/35/9CDCFE/?text=+)   | #9CDCFE   |
-| Flow Keyword         | ![#C586C0](https://fakeimg.pl/35/C586C0/?text=+)   | #C586C0   |
-| Logic Keyword        | ![#C586C0](https://fakeimg.pl/35/C586C0/?text=+)   | #C586C0   |
-| Import               | ![##C2FF9E](https://fakeimg.pl/35/C2FF9E/?text=+)  | #C2FF9E   |
-| String               | ![#F3C785](https://fakeimg.pl/35/F3C785/?text=+)   | #F3C785   |
-| Number               | ![#B5CEA8](https://fakeimg.pl/35/B5CEA8/?text=+)   | #B5CEA8   |
-| Constant             | ![#10B1FE](https://fakeimg.pl/35/10B1FE/?text=+)   | #10B1FE   |
-| Comment              | ![#C9C9C9BC](https://fakeimg.pl/35/C9C9C9/?text=+) | #C9C9C9BC |
-| Operator/Punctuation | ![#D4D4D4](https://fakeimg.pl/35/D4D4D4/?text=+)   | #D4D4D4   |
-| self/this Keyword    | ![#B6C8C6](https://fakeimg.pl/35/B6C8C6/?text=+)   | #B6C8C6   |
+Reference style [link][1].
 
-<h2>Customizing Syntax Colors</h2>
+[1]: http://example.com "Example"
 
-You can add or modify a particular syntax color to your preferences by
+## Image
 
-<ol>
-<li>Opening the "Inspect Editor Tokens and Scopes" tools in VSCode and placing your cursor with text you want to change</li>
-<li>Copying one of the listed textmate scopes (using the most specific scope will reduce the risk of accidentally recoloring other tokens)</li>
-<li>Add a textmate rule to your settings.json file with the following format:
+Image: ![My image](http://www.foo.bar/image.png)
 
-```json
-"editor.tokenColorCustomizations": {
-    "textMateRules": [
-        {
-            "scope": "<scope of the token>",
-            "settings": {
-                "foreground": "<color you want to use>"
-            }
-        }
-    ]
-}
+## Headers
+
+# First level title
+
+## Second level title
+
+### Third level title
+
+#### Fourth level title
+
+##### Fifth level title
+
+###### Sixth level title
+
+### Title with [link](http://localhost)
+
+### Title with ![image](http://localhost)
+
+## Code
+
 ```
-</li>
-<ol>
+This
+  is
+    code
+      fence
+```
 
-It may be the case that two or more distinct code elements have only a single textmate scope which is shared across them. If you wish for their colors to differ you may need to <a href="https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide">manually add your own scope</a>.
+Inline `code span in a` paragraph.
+
+This is a code block:
+
+    /**
+     * Sorts the specified array into ascending numerical order.
+     *
+     * <p>Implementation note: The sorting algorithm is a Dual-Pivot Quicksort
+     * by Vladimir Yaroslavskiy, Jon Bentley, and Joshua Bloch. This algorithm
+     * offers O(n log(n)) performance on many data sets that cause other
+     * quicksorts to degrade to quadratic performance, and is typically
+     * faster than traditional (one-pivot) Quicksort implementations.
+     *
+     * @param a the array to be sorted
+     */
+
+    public static void sort(byte[] a) {
+        DualPivotQuicksort.sort(a);
+    }
+
+## Quotes
+
+> This is the first level of quoting.
+>
+> > This is nested blockquote.
+>
+> Back to the first level.
+
+> A list within a blockquote:
+>
+> - asterisk 1
+> - asterisk 2
+> - asterisk 3
+
+> Formatting within a blockquote:
+>
+> ### header
+>
+> Link: [Example](http://example.com)
+
+## Horizontal rules
+
+---
+
+---
+
+---
+
+## Lists
+
+Unordered list:
+
+- asterisk 1
+- asterisk 2
+- asterisk 3
+
+Ordered list:
+
+1. First
+2. Second
+3. Third
+
+Mixed:
+
+1. First
+2. Second:
+   - Fee
+   - Fie
+   - Foe
+3. Third
+
+## Tables
+
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Data 1   | Data 2   |
+
+<table>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+  <tr>
+    <td>Row 1 Cell 1</td>
+    <td>Row 1 Cell 2</td>
+  </tr>
+  <tr>
+    <td>Row 2 Cell 1</td>
+    <td>Row 2 Cell 2</td>
+  </tr>
+</table>

@@ -1,4 +1,5 @@
 Vim Motions Default Keybinds
+----------------------------
 
 | - start of line
 $ - end of line
@@ -7,18 +8,14 @@ e - end of the next word
 b - start of previous word
 f + <char> - jump to first occurrence of the character on the line
 ; - jump to the next occurrence of the character
+g + ; - last edit location
 i - insert after character
 a - insert before character
 y - yank
-d - delete modified
+d - modified delete
 x - delete character at cursor
-g + ; - last edit
 
-
-Larger Navigate
 ctl - f - down full page
 ctl - b - up full page
 ctl - d - down half page
 ctl - u - up half page
-
-!@#$@#%^#$%&^$%&(&^())
