@@ -40,6 +40,9 @@ In order to have consistent cross-language syntax highlighting, it is necessary 
 - YAML
 - .env - <a href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotENV</a> recommended for full highlighting
 - .ini
+- .toml
+- .log
+- .gradle - extension such as <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle">DotENV</a> needed for full highlighting
 
 <h3>Syntax Color Palette</h3>
 
@@ -70,14 +73,14 @@ In order to have consistent cross-language syntax highlighting, it is necessary 
 
 Add consistent highlighting for:
 
-- Lua
 - CSS
 - SQL
 - C
 - C++
-- Go
 - JavaScript
 - TypeScript
+- Go
+- Lua
 
 <h2>Credits</h2>
 

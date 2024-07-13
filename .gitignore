@@ -6,7 +6,5 @@ node_modules
 .mypy_cache
 .DS_Store
 .vscode/settings.json
-test/.DS_Store
 test/more_tests
-assets/.DS_Store
-themes/.DS_Store
+

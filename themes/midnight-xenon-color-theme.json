@@ -136,7 +136,7 @@
 			"name": "Logic Keyword",
 			"scope": [
 				"keyword.operator.logical",
-				"storage.modifier"
+				"storage.modifier",
 			],
 			"settings": {
 				"foreground": "#22ADF8"
@@ -172,7 +172,7 @@
 				"string.quoted.docstring",
 				"comment.block.javadoc.java",
 				"entity.name.section.group-title.ini",
-				"markup.underline.link"
+				"markup.underline.link",
 			],
 			"settings": {
 				"foreground": "#EEBC70"
@@ -189,6 +189,7 @@
 				"comment.line.number-sign.yaml",
 				"comment.line.number-sign",
 				"comment.line.semicolon.ini",
+				"comment.block.html",
 			],
 			"settings": {
 				"foreground": "#60737D"
@@ -236,7 +237,7 @@
 				"text.xml",
 			],
 			"settings": {
-				"foreground": "#D5E4E4"
+				"foreground": "#DDDDDD"
 			}
 		},
 		{
@@ -288,6 +289,55 @@
 			}
 		},
 		{
+			"name": "TOML - Property (also heading)",
+			"scope": "support.type.property-name",
+			"settings": {
+				"foreground": "#88D5FF"
+			}
+		},
+		{
+			"name": "Log - Date",
+			"scope": "log.date text.log",
+			"settings": {
+				"foreground": "#88D5FF"
+			}
+		},
+		{
+			"name": "Log - Debug",
+			"scope": "log.debug text.log",
+			"settings": {
+				"foreground": "#e3b7ff"
+			}
+		},
+		{
+			"name": "Log - Info",
+			"scope": "log.info text.log",
+			"settings": {
+				"foreground": "#6b5eff"
+			}
+		},
+		{
+			"name": "Log - Warning",
+			"scope": "log.warning text.log",
+			"settings": {
+				"foreground": "#ffa319"
+			}
+		},
+		{
+			"name": "Log - Error",
+			"scope": "log.error text.log",
+			"settings": {
+				"foreground": "#ff4160"
+			}
+		},
+		{
+			"name": "Requirements.txt - Libraries/Modules",
+			"scope": "source.pip-requirements entity.name.class",
+			"settings": {
+				"foreground": "#8F97FF"
+			}
+		},
+		{
 			"name": "Markup - Heading",
 			"scope": [
 				"markup.heading",
@@ -298,7 +348,7 @@
 			}
 		},
 		{
-			"name": "Link Description",
+			"name": "Markup - Link Description",
 			"scope": [
 				"string.other.link.description.markdown",
 				"string.other.link.title.markdown",
@@ -323,7 +373,7 @@
 			}
 		},
 		{
-			"name": "Code/Quotes",
+			"name": "Markup - Code/Quotes",
 			"scope": [
 				"markup.quote",
 				"markup.quote.markdown meta.paragraph.markdown",

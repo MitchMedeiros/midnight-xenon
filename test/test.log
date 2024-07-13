@@ -1,0 +1,113 @@
+2024-07-11 23:46:44,432 - tests.conftest - INFO - Logging configuration loaded.
+2024-07-11 23:46:44,432 - tests.conftest - DEBUG - Uncaught exception handler set.
+2024-07-11 23:46:47,815 - mlcompare.data.data_processor - INFO - Data successfully downloaded
+2024-07-11 23:46:47,853 - mlcompare.data.data_processor - INFO - String data converted to DataFrame: 
+           Name  Location  ... Weekday Reservations    Revenue
+0  Restaurant 0     Rural  ...                    4  638945.52
+1  Restaurant 1  Downtown  ...                    6  490207.83
+2  Restaurant 2     Rural  ...                   14  541368.62
+
+[3 rows x 17 columns]
+2024-07-11 23:46:47,859 - mlcompare.data.data_processor - INFO - Columns dropped: 
+   Location   Cuisine  ...  Weekday Reservations    Revenue
+0     Rural  Japanese  ...                     4  638945.52
+1  Downtown   Mexican  ...                     6  490207.83
+2     Rural   Italian  ...                    14  541368.62
+
+[3 rows x 16 columns]
+2024-07-11 23:46:47,870 - mlcompare.data.data_processor - INFO - Data successfully encoded: 
+   Rating  Seating Capacity  ...  Parking Availability_No  Parking Availability_Yes
+0     4.0                38  ...                      0.0                       1.0
+1     3.2                76  ...                      0.0                       1.0
+2     4.7                48  ...                      1.0                       0.0
+
+[3 rows x 24 columns]
+2024-07-11 23:46:47,921 - mlcompare.data.data_processor - INFO - Data saved to: /Users/person/stuff/mlcompare/tests/data/restaurant-revenue-prediction-dataset.parquet
+2024-07-11 23:46:48,224 - mlcompare.data.data_processor - ERROR - Exception when calling Kaggle Api
+Traceback (most recent call last):
+  File "/Users/person/stuff/mlcompare/mlcompare/data/data_processor.py", line 94, in download_kaggle_data
+    data = kaggle.api.datasets_download_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/kaggle/api/kaggle_api.py", line 1592, in datasets_download_file
+    (data) = self.datasets_download_file_with_http_info(owner_slug, dataset_slug, file_name, **kwargs)  # noqa: E501
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/kaggle/api/kaggle_api.py", line 1668, in datasets_download_file_with_http_info
+    return self.api_client.call_api(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/kaggle/api_client.py", line 313, in call_api
+    return self.__call_api(resource_path, method,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/kaggle/api_client.py", line 145, in __call_api
+    response_data = self.request(
+                    ^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/kaggle/api_client.py", line 335, in request
+    return self.rest_client.GET(url,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/kaggle/rest.py", line 231, in GET
+    return self.request("GET", url,
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/kaggle/rest.py", line 225, in request
+    raise ApiException(http_resp=r)
+kaggle.rest.ApiException: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json', 'Date': 'Thu, 11 Jul 2024 20:46:48 GMT'})
+HTTP response body: {"code":403,"message":"Permission \u0027datasets.get\u0027 was denied"}
+
+2024-07-11 23:46:50,173 - mlcompare.data.data_processor - INFO - Data successfully downloaded
+2024-07-11 23:46:50,199 - mlcompare.data.data_processor - INFO - String data converted to DataFrame: 
+           Name  Location  ... Weekday Reservations    Revenue
+0  Restaurant 0     Rural  ...                    4  638945.52
+1  Restaurant 1  Downtown  ...                    6  490207.83
+2  Restaurant 2     Rural  ...                   14  541368.62
+
+[3 rows x 17 columns]
+2024-07-11 23:46:50,202 - mlcompare.data.data_processor - INFO - Columns dropped: 
+   B
+0  3
+1  4
+2024-07-11 23:46:50,207 - mlcompare.data.data_processor - INFO - Data successfully encoded: 
+   Value  Category_A  Category_B
+0      1         1.0         0.0
+1      2         0.0         1.0
+2      3         1.0         0.0
+2024-07-11 23:46:50,209 - mlcompare.data.data_processor - ERROR - Could not convert data with type: <class 'int'> to DataFrame
+Traceback (most recent call last):
+  File "/Users/person/stuff/mlcompare/mlcompare/data/data_processor.py", line 40, in __init__
+    self.data = pd.DataFrame(data)
+                ^^^^^^^^^^^^^^^^^^
+  File "/Users/person/opt/anaconda3/envs/some_env/lib/python3.11/site-packages/pandas/core/frame.py", line 886, in __init__
+    raise ValueError("DataFrame constructor not properly called!")
+ValueError: DataFrame constructor not properly called!
+2024-07-11 23:46:50,223 - mlcompare.data.data_processor - WARNING - Missing values found in DataFrame: has_nan=True, has_empty_strings=True, has_dot_values=True.
+DataFrame: 
+     A      B
+0  1.0       
+1  2.0  value
+2  NaN      .
+2024-07-11 23:46:50,274 - mlcompare.data.data_processor - WARNING - Missing values found in DataFrame: has_nan=False, has_empty_strings=False, has_dot_values=True.
+DataFrame: 
+   A      B
+0  1  value
+1  2      .
+2  3  value
+2024-07-11 23:46:50,276 - mlcompare.data.data_processor - WARNING - Missing values found in DataFrame: has_nan=False, has_empty_strings=True, has_dot_values=False.
+DataFrame: 
+   A      B
+0  1       
+1  2  value
+2  3  value
+2024-07-11 23:46:50,278 - mlcompare.data.data_processor - WARNING - Missing values found in DataFrame: has_nan=True, has_empty_strings=False, has_dot_values=False.
+DataFrame: 
+     A      B
+0  1.0  value
+1  2.0  value
+2  NaN  value
+2024-07-11 23:46:50,279 - mlcompare.data.data_processor - WARNING - Missing values found in DataFrame: has_nan=True, has_empty_strings=True, has_dot_values=True.
+DataFrame: 
+     A    B      C
+0  1.0        True
+1  2.0  3.5  False
+2  NaN    .   None
+2024-07-11 23:46:50,280 - mlcompare.data.data_processor - INFO - Data saved to: /Users/person/stuff/mlcompare/tests/data/test.csv
+2024-07-11 23:46:50,281 - mlcompare.data.data_processor - INFO - Data saved to: /Users/person/stuff/mlcompare/tests/data/test.pkl
+2024-07-11 23:46:50,282 - mlcompare.data.data_processor - INFO - Data successfully split: X_train.shape=(3, 1), X_test.shape=(1, 1), y_train.shape=(3,), y_test.shape=(1,)
