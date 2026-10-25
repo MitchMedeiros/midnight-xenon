@@ -1,4 +1,13 @@
 .vscode/**
 .vscode-test/**
+assets/language_logos/**
+assets/theme_examples/**
+.husky/**
+.editorconfig
+.prettierignore
+.prettierrc.json
+package-lock.json
+test/**
+tools/**
 .gitignore
 vsc-extension-quickstart.md

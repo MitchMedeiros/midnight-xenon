@@ -38,5 +38,20 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/MitchMedeiros/midnight-xenon.git"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:theme": "node tools/check-theme.mjs",
+    "check": "npm run format:check && npm run check:theme",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{json,md}": "prettier --write"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10"
   }
 }

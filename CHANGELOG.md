@@ -14,7 +14,7 @@
 
 ## [1.2.0]
 
-- Added full syntax highlighting for Java. 
+- Added full syntax highlighting for Java.
 
 ## [1.1.1]
 

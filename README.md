@@ -18,9 +18,7 @@ Maintains similar syntax highlighting as the default Dark Modern and Dark+ theme
 
 ## Syntax Highlighting
 
-In order to have consistent cross-language syntax highlighting, it is necessary to declare the language server (LSP)
-extension used for each programming language. This is because different LSPs tokenize and assign scope names to text
-differently. This theme was created using the most popular LSPs for each language:
+In order to have consistent cross-language syntax highlighting, it is necessary to declare the language server (LSP) extension used for each programming language. This is because different LSPs tokenize and assign scope names to text differently. This theme was created using the most popular LSPs for each language:
 
 - <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/python.png" width="19"> Python - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) or [Pyrefly](https://marketplace.visualstudio.com/items?itemName=meta.pyrefly)
 - <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/java.png" width="17"> Java - [Language Support for Java](https://marketplace.visualstudio.com/items?itemName=redhat.java)
