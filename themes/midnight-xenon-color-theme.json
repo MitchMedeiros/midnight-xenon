@@ -41,6 +41,8 @@
 				"storage.type.built-in",
 				"storage.type.integral",
 				"storage.type.return-type.lambda.cpp",
+				"keyword.other.type.php",
+				"entity.other.alias.php",
 			],
 			"settings": {
 				"foreground": "#30E5BE"
@@ -75,6 +77,10 @@
 				"meta.attribute.rust",
 				"meta.attribute.swift",
 				"storage.modifier.attribute.swift",
+				"meta.attribute.php",
+				"support.attribute.php",
+				"support.attribute.builtin.php",
+				"keyword.other.special-method.ruby",
 				"punctuation.definition.attribute.swift",
 				"entity.name.type.annotation.kotlin",
 			],
@@ -111,6 +117,10 @@
 				"constant.other.caps.rust",
 				"entity.other.attribute.lua",
 				"string.tag.lua",
+				"constant.enum.php",
+				"constant.other.php",
+				"constant.other.class.php",
+				"constant.other.symbol.hashkey.parameter.function.ruby",
 			],
 			"settings": {
 				"foreground": "#88D5FF"
@@ -145,6 +155,8 @@
 				"entity.name.scope-resolution",
 				"meta.import.swift entity.name.type.swift",
 				"entity.name.package.kotlin",
+				"entity.name.type.namespace.php",
+				"support.other.namespace.php",
 			],
 			"settings": {
 				"foreground": "#8F97FF"
@@ -173,6 +185,9 @@
 				"meta.preprocessor.conditional.swift",
 				"punctuation.definition.preprocessor.swift",
 				"keyword.hard.package.kotlin",
+				"keyword.other.namespace.php",
+				"keyword.other.use.php",
+				"keyword.other.use-as.php",
 				"meta.import.kotlin keyword.soft.kotlin",
 				"meta.import.kotlin keyword.hard.kotlin",
 			],
@@ -208,6 +223,11 @@
 				"keyword.other.rust",
 				"keyword.other.typedef",
 				"keyword.other.declaration-specifier",
+				"keyword.other.function.use.php",
+				"keyword.other.new.php",
+				"keyword.control.class.ruby",
+				"keyword.control.def.ruby",
+				"keyword.control.module.ruby",
 				"keyword.other.generic-constraint-introducer.swift",
 				"keyword.other.operator.type.opaque.swift",
 				"keyword.hard",
@@ -235,6 +255,8 @@
 				"keyword.operator.cast",
 				"keyword.operator.delete",
 				"keyword.operator.typeid",
+				"keyword.operator.type.php",
+				"keyword.operator.as.php",
 			],
 			"settings": {
 				"foreground": "#22ADF8"
@@ -249,6 +271,7 @@
 				"variable.language.self.rust",
 				"variable.language.self.lua",
 				"variable.language.swift",
+				"variable.language.self.ruby",
 			],
 			"settings": {
 				"foreground": "#B9CEDA",
@@ -278,6 +301,8 @@
 			"scope": [
 				"string",
 				"punctuation.definition.string",
+				"keyword.operator.heredoc.php",
+				"keyword.operator.nowdoc.php",
 				"comment.block.documentation.scala",
 				"string.quoted.docstring",
 				"comment.block.javadoc.java",
@@ -321,6 +346,8 @@
 				"storage.modifier.array",
 				"entity.name.operator.cpp",
 				"storage.type.function.arrow.kotlin",
+				"keyword.definition.arrow.php",
+				"storage.type.variable.ruby",
 				"constant.language.import-export-all"
 			],
 			"settings": {
