@@ -2,6 +2,7 @@
 .vscode-test/**
 assets/language_logos/**
 assets/theme_examples/**
+AGENTS.md
 .husky/**
 .editorconfig
 .prettierignore

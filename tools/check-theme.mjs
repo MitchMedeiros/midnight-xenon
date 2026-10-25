@@ -1,16 +1,12 @@
-import { readFileSync } from "node:fs";
+import { loadTheme } from "./theme.mjs";
 
-const themePath = new URL("../themes/midnight-xenon-color-theme.json", import.meta.url);
 const hexColor = /^#([0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$/i;
 const errors = [];
 const warnings = [];
 
 let theme;
 try {
-  const source = readFileSync(themePath, "utf8")
-    .replace(/^\s*\/\/.*$/gm, "")
-    .replace(/,(\s*[}\]])/g, "$1");
-  theme = JSON.parse(source);
+  theme = loadTheme();
 } catch (error) {
   console.error(`Theme is not valid JSON: ${error.message}`);
   process.exit(1);
