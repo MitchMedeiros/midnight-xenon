@@ -189,6 +189,8 @@
 				"comment.line.number-sign.yaml",
 				"comment.line.number-sign",
 				"comment.line.semicolon.ini",
+				"comment.line.double-dash.sql",
+				"punctuation.definition.comment.sql",
 				"comment.block.html",
 			],
 			"settings": {
@@ -529,6 +531,128 @@
 				"foreground": "#82AAFF"
 			}
 		},
+		{
+			"name": "CSS Keyword",
+			"scope": [
+				"keyword.other.important.css",
+				"entity.other.keyframe-offset.css"
+			],
+			"settings": {
+				"foreground": "#22ADF8"
+			}
+		},
+		{
+			"name": "SQL Keyword",
+			"scope": [
+				"keyword.other.DML.sql",
+				"keyword.other.alias.sql",
+				"keyword.other.sql",
+				"keyword.other.order.sql",
+				"keyword.other.DML.II.sql",
+				"keyword.other.DDL.create.II.sql",
+				"keyword.other.data-integrity.sql",
+				"keyword.other.object-comments.sql"
+			],
+			"settings": {
+				"foreground": "#22ADF8"
+			}
+		},
+		{
+			"name": "SQL Table and Database Name",
+			"scope": [
+				"constant.other.table-name.sql",
+				"constant.other.database-name.sql"
+			],
+			"settings": {
+				"foreground": "#88D5FF"
+			}
+		},
+		{
+			"name": "SQL Create",
+			"scope": [
+				"keyword.other.create.sql",
+				"keyword.other.LUW.sql",
+				"keyword.other.authorization.sql",
+				"keyword.other.cascade.sql"
+			],
+			"settings": {
+				"foreground": "#C586C0"
+			}
+		},
+		{
+			"name": "SQL Table Keyword",
+			"scope": [
+				"keyword.other.table.sql"
+			],
+			"settings": {
+				"foreground": "#30E5BE"
+			}
+		},
+		{
+			"name": "Shell Argument",
+			"scope": [
+				"string constant.other.option meta.statement.shell",
+				"string constant.other.option meta.statement.command.shell",
+				"source.shell constant.other.option"
+			],
+			"settings": {
+				"foreground": "#22ADF8"
+			}
+		},
+		{
+			"name": "Control Keyword",
+			"scope": [
+				"keyword.control"
+			],
+			"settings": {
+				"foreground": "#C586C0"
+			}
+		},
+		{
+			"name": "Component Attribute",
+			"scope": [
+				"entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#88D5FF"
+			}
+		},
+		{
+			"name": "Block Comment",
+			"scope": [
+				"comment.block"
+			],
+			"settings": {
+				"foreground": "#60737D"
+			}
+		},
+		{
+			"name": "New Keyword",
+			"scope": [
+				"keyword.operator.new"
+			],
+			"settings": {
+				"foreground": "#22ADF8"
+			}
+		},
+		{
+			"name": "PowerShell Comment",
+			"scope": [
+				"comment.line.powershell"
+			],
+			"settings": {
+				"foreground": "#60737D"
+			}
+		},
+		{
+			"name": "PowerShell Automatic Variable",
+			"scope": [
+				"support.variable.automatic.powershell"
+			],
+			"settings": {
+				"foreground": "#88D5FF"
+			}
+		},
 	],
 	"colors": {
 		// Universal
@@ -544,8 +668,7 @@
 		"sash.hoverBorder": "#5dc1ff72",
 		"input.background": "#14171b",
 		"input.foreground": "#c4d0d4",
-		"input.border": "#333333",
-		"input.placeholderForeground": "#727272",
+		"input.border": "#333333",		"input.placeholderForeground": "#727272",
 		// Window Border
 		"window.activeBorder": "#00000000",
 		"window.inactiveBorder": "#00000000",
@@ -596,7 +719,7 @@
 		// Side Bar
 		"sideBar.background": "#181b20",
 		"sideBar.foreground": "#bcc8cb",
-		"sideBar.border": "#181b2000",
+		"sideBar.border": "#38404a30",
 		"sideBar.dropBackground": "#2dc6e813",
 		"sideBarTitle.foreground": "#bcc8cb",
 		"sideBarSectionHeader.background": "#181b20",
@@ -649,7 +772,7 @@
 		"terminal.inactiveSelectionBackground": "#5dc1ff23",
 		// Panels
 		"panel.background": "#181b20",
-		"panel.border": "#00000000",
+		"panel.border": "#38404a30",
 		"panelTitle.activeBorder": "#5dc1ff",
 		"panelTitle.activeForeground": "#bcc8cb",
 		"panelTitle.inactiveForeground": "#bcc8cbc6",
