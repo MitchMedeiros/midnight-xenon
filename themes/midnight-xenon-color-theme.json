@@ -35,6 +35,8 @@
 				"entity.name.function",
 				"entity.name.method",
 				"support.function",
+				"punctuation.decorator",
+				"meta.decorator variable.other.readwrite",
 				"support.function.magic.python",
 				"storage.type.tag-handle.yaml",
 			],
@@ -52,7 +54,10 @@
 				"variable.other.readwrite",
 				"variable.other.constant",
 				"support.variable.magic.python",
-				"support.other.variable.less",
+				"support.other.variable",
+				"support.variable.property",
+				"meta.object-literal.key",
+				"entity.name.label",
 				"variable.stable",
 				"variable.volatile",
 				"variable.function",
@@ -137,6 +142,8 @@
 			"name": "Logic Keyword",
 			"scope": [
 				"keyword.operator.logical",
+				"keyword.operator.expression",
+				"keyword.operator.type.asserts",
 				"keyword.operator.logic.media.less",
 				"storage.modifier",
 			],
@@ -149,7 +156,7 @@
 			"scope": [
 				"variable.parameter.function.language.special.self",
 				"variable.language.scala",
-				"variable.language.this.java",
+				"variable.language.this",
 			],
 			"settings": {
 				"foreground": "#B9CEDA",
@@ -160,6 +167,7 @@
 			"scope": [
 				"number",
 				"constant.numeric",
+				"storage.type.numeric.bigint",
 			],
 			"settings": {
 				"foreground": "#B5CEA8"
@@ -204,7 +212,8 @@
 		{
 			"name": "Operator",
 			"scope": [
-				"keyword.operator"
+				"keyword.operator",
+				"constant.language.import-export-all"
 			],
 			"settings": {
 				"foreground": "#D4D4D4"
@@ -266,6 +275,23 @@
 			}
 		},
 		{
+			"name": "Color Functions and Names",
+			"scope": [
+				"meta.function.color.css support.function",
+				"meta.function.color.css support.constant",
+				"meta.function.color.css constant.numeric",
+				"meta.function.color.css keyword.other.unit",
+				"meta.function.color.css punctuation.section.function",
+				"meta.function.color.css punctuation.separator",
+				"support.function.color.less",
+				"support.constant.color.w3c-standard-color-name",
+				"support.constant.color.w3c-extended-color-name"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "Invalid",
 			"scope": [
 				"invalid",
@@ -281,7 +307,7 @@
 				"string.regexp"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#88D5FF"
 			}
 		},
 		{
@@ -494,9 +520,8 @@
 			}
 		},
 		{
-			"name": "Other Variable, String Link",
+			"name": "String Link",
 			"scope": [
-				"support.other.variable",
 				"string.other.link"
 			],
 			"settings": {
@@ -515,7 +540,7 @@
 				"source.postcss support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"foreground": "#B9CEDA"
 			}
 		},
 		{

@@ -18,32 +18,35 @@ Maintains similar syntax highlighting as the default Dark Modern and Dark+ theme
 
 ## Syntax Highlighting
 
-In order to have consistent cross-language syntax highlighting, it is necessary to declare the language server (LSP) extension used for each programming language. This is because different LSPs tokenize and assign scope names to text differently. This theme was created using the most popular LSPs for each language:
+The extensions used when creating the theme are listed below if they do not come built-in. Each LSP can tokenize and assign names to text differently, so for best results you should use them for the file types you care about. Generally, they are the most popular option available.
 
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/python.png" width="19"> Python - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) or [Pyrefly](https://marketplace.visualstudio.com/items?itemName=meta.pyrefly)
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/java.png" width="17"> Java - [Language Support for Java](https://marketplace.visualstudio.com/items?itemName=redhat.java)
-- <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/scala.png" width="17"> Scala - [Metals](https://marketplace.visualstudio.com/items?itemName=scalameta.metals)
+| Language                                                                                                                           | Extension Needed                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/python.png" width="19"> Python                     | [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) or [Pyrefly](https://marketplace.visualstudio.com/items?itemName=meta.pyrefly) |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/java.png" width="17"> Java                         | [Language Support for Java](https://marketplace.visualstudio.com/items?itemName=redhat.java)                                                                           |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/scala.png" width="17"> Scala                       | [Metals](https://marketplace.visualstudio.com/items?itemName=scalameta.metals)                                                                                         |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/javascript.png" width="17"> JavaScript (.js, .jsx) | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/typescript.png" width="17"> TypeScript (.ts, .tsx) | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/html.png" width="17"> HTML                         | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/css.png" width="17"> CSS                           | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/shell.png" width="17"> Shell (.sh, .bash)          | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/powershell.png" width="17"> PowerShell             | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/sql.png" width="17"> SQL                           | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/json.png" width="17"> JSON                         | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/xml.png" width="17"> XML                           | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/yaml.png" width="17"> YAML                         | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/markdown.png" width="17"> Markdown                 | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/jupyter.png" width="17"> Jupyter Notebooks         | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/env.png" width="17"> .env                          | [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) recommended                                                                             |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/ini.png" width="17"> .ini                          | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/toml.png" width="17"> .toml                        | [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)                                                                       |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/log.png" width="17"> .log                          | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/gradle.png" width="17"> .gradle                    | [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) recommended                                                               |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/scss.png" width="17"> SCSS                         | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/sass.png" width="17"> Sass (.sass)                 | [Sass (.sass only)](https://marketplace.visualstudio.com/items?itemName=syler.sass-indented)                                                                           |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/less.png" width="17"> Less                         | -                                                                                                                                                                      |
 
-**Other Customized File Types**
-
-- Jupyter Notebooks
-- Markdown
-- HTML
-- CSS
-- SCSS
-- Sass - [Sass (.sass only)](https://marketplace.visualstudio.com/items?itemName=syler.sass-indented) needed for highlighting
-- Less
-- JSON
-- XML
-- YAML
-- Shell (.sh, .bash)
-- PowerShell
-- SQL
-- .env - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) by mikestead recommended for full highlighting
-- .ini
-- .toml
-- .log
-- .gradle - extension such as [Gradle for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle) needed for full highlighting
+Files not listed will still get the theme's general highlighting for comments, strings, numbers, keywords, functions and types. General coverage will just be less consistent but you can always extend this through your personal settings file or creating a PR!
 
 ### Syntax Color Palette
 
@@ -76,9 +79,8 @@ Add consistent highlighting for:
 
 - C
 - C++
-- JavaScript
-- TypeScript
 - Go
+- Rust
 - Lua
 
 ## Credits

@@ -85,6 +85,40 @@ const Badge: FC<{ count: number }> = ({ count }) => <span className="badge">{cou
 
 const identity = <T,>(value: T): T => value;
 
+interface CardProps {
+    id: number;
+    children?: ReactNode;
+    onClose?: () => void;
+}
+
+const Card: FC<CardProps> = ({ children, id, onClose }) => (
+    <React.Fragment key={id}>
+        <article
+            data-id={id}
+            aria-label="Card"
+            tabIndex={0}
+            hidden={false}
+            style={{
+                color: "#22adf8",
+                backgroundColor: "rgb(34 173 248 / 50%)",
+                padding: `${id}px calc(1rem * 2)`,
+                "--accent": "hsl(200deg 90% 55%)",
+            } as React.CSSProperties}
+            dangerouslySetInnerHTML={{ __html: "<b>bold</b>" }}
+        >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="#icon" fill="currentColor" />
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            </svg>
+            {children}
+            <input type="checkbox" disabled checked onChange={(e: ChangeEvent<HTMLInputElement>) => onClose?.()} />
+            <a href="https://example.com" target="_blank" rel="noreferrer">
+                Link &copy; 2025
+            </a>
+        </article>
+    </React.Fragment>
+);
+
 export default function App(): JSX.Element {
     const items: Item[] = [{ id: 1, label: "Write tests" }];
     return (
