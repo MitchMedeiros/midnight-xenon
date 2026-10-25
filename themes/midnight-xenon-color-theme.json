@@ -20,6 +20,22 @@
 				"storage.type.byte.go",
 				"storage.type.rune.go",
 				"storage.type.complex.go",
+				"keyword.type.bool.cs",
+				"keyword.type.byte.cs",
+				"keyword.type.char.cs",
+				"keyword.type.decimal.cs",
+				"keyword.type.double.cs",
+				"keyword.type.float.cs",
+				"keyword.type.int.cs",
+				"keyword.type.long.cs",
+				"keyword.type.object.cs",
+				"keyword.type.sbyte.cs",
+				"keyword.type.short.cs",
+				"keyword.type.string.cs",
+				"keyword.type.uint.cs",
+				"keyword.type.ulong.cs",
+				"keyword.type.ushort.cs",
+				"keyword.type.void.cs",
 			],
 			"settings": {
 				"foreground": "#30E5BE"
@@ -84,6 +100,8 @@
 				"keyword.other.definition.ini",
 				"variable.other.env",
 				"constant.other.caps.rust",
+				"entity.other.attribute.lua",
+				"string.tag.lua",
 			],
 			"settings": {
 				"foreground": "#88D5FF"
@@ -114,6 +132,7 @@
 				"entity.name.type.package.go",
 				"variable.other.import.go",
 				"entity.name.module.rust",
+				"entity.name.type.namespace.cs",
 			],
 			"settings": {
 				"foreground": "#8F97FF"
@@ -132,6 +151,12 @@
 				"keyword.package.go",
 				"meta.use.rust keyword.other.rust",
 				"keyword.other.crate.rust",
+				"keyword.other.directive.using.cs",
+				"keyword.other.directive.static.cs",
+				"keyword.preprocessor",
+				"meta.preprocessor.cs",
+				"punctuation.separator.hash.cs",
+				"keyword.operator.expression.await.cs",
 			],
 			"settings": {
 				"foreground": "#C586C0"
@@ -163,6 +188,8 @@
 				"keyword.var.go",
 				"keyword.other.fn.rust",
 				"keyword.other.rust",
+				"keyword.local.lua",
+				"meta.function.lua keyword.control.lua",
 			],
 			"settings": {
 				"foreground": "#22ADF8"
@@ -176,6 +203,7 @@
 				"keyword.operator.type.asserts",
 				"keyword.operator.logic.media.less",
 				"storage.modifier",
+				"keyword.control.loop.in.cs",
 			],
 			"settings": {
 				"foreground": "#22ADF8"
@@ -188,6 +216,7 @@
 				"variable.language.scala",
 				"variable.language.this",
 				"variable.language.self.rust",
+				"variable.language.self.lua",
 			],
 			"settings": {
 				"foreground": "#B9CEDA",
@@ -243,6 +272,7 @@
 				"comment.line.sass",
 				"comment.block.html",
 				"comment.line.documentation.rust",
+				"comment.line.double-dash.lua",
 			],
 			"settings": {
 				"foreground": "#60737D"
