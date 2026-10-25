@@ -1,7 +1,10 @@
 from math import pi
 from typing import Optional
 
+import pandas as pd
 from deprecated import deprecated
+
+df = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6]})
 
 
 # Compute the area and circumference via a class
@@ -17,6 +20,7 @@ class Circle:
 
     @deprecated("Circle.area is deprecated.", version="2.0")
     def area(self) -> float:
+        pd.Series(df["A"])
         return pi * self.radius**2
 
     def circumference(self) -> float:
@@ -46,6 +50,25 @@ def example() -> None:
 
     print(circle)
 
+
+another_query = """
+--sql
+SELECT
+    pc.id AS id,
+    pc.review AS review,
+    p.title AS postTitle
+FROM post_comment pc
+Where pc.id = 1
+;
+"""
+
+query = """
+--sql
+SELECT *
+FROM post_comment pc
+Where pc.id = 1
+;
+"""
 
 if __name__ == "__main__":
     example()
