@@ -1,22 +1,3 @@
-List < Tuple > comments = entityManager.createNativeQuery(
-    """
-    SELECT
-        pc.id AS id,
-        pc.review AS review,
-        p.title AS postTitle
-    FROM post_comment pc
-    JOIN post p ON pc.post_id = p.id
-    """,
-    Tuple.class
-).getResultList();
-for (Tuple comment: comments) { String review = (String) comment.get("review");
-String postTitle = (String) comment.get("postTitle");
-LOGGER.info(
-    "The Post '{}' got this review '{}'",
-    postTitle,
-    review
-);
-}
 SELECT pc.id AS id,
     pc.review AS review,
     p.title AS postTitle

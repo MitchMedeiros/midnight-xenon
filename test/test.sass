@@ -1,0 +1,95 @@
+/* Block comment */
+// Line comment
+
+@import base
+
+$primary-color: #22adf8 !default
+$spacing: 1.5rem
+$radius: 4px
+
+.button
+  margin: 0 auto
+  padding: calc(#{$spacing} * 2) $spacing
+  color: $primary-color
+  border: 1px solid rgba($primary-color, 0.5)
+  border-radius: $radius
+  transition: background-color 0.3s ease-in-out !important
+  width: calc(100% - 2rem)
+
+  &:hover,
+  &.is-active
+    background: lighten($primary-color, 20%)
+
+#main > a:visited span[lang="en"]::after
+  content: "\2192"
+  font-family: "JetBrains Mono", monospace
+
+@media (min-width: 768px) and (prefers-color-scheme: dark)
+  .button
+    padding: $spacing
+
+@keyframes fade-in
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@font-face
+  font-family: "JetBrains Mono"
+  src: url("fonts/jetbrains-mono.woff2") format("woff2")
+
+@supports (display: grid)
+  .layout
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+    gap: 1em 2em
+    transform: translateX(-10px) rotate(45deg)
+
+input[type="text"]::placeholder
+  color: #888
+
+// Sass specific
+@use "sass:math"
+
+$breakpoints: ("small": 576px, "large": 992px)
+
+=respond-to($name)
+  @media (min-width: map-get($breakpoints, $name))
+    @content
+
+@function rem($pixels, $base: 16px)
+  @return math.div($pixels, $base) * 1rem
+
+%placeholder
+  margin: 0 auto
+
+.card
+  @extend %placeholder
+  padding: rem(12px) $spacing
+
+  &--large
+    font-size: #{$spacing * 2}
+
+  .icon + &
+    margin-left: 0.25em
+
+  +respond-to("large")
+    width: calc(100% - #{$spacing})
+
+@each $name, $glyph in (home: "\f015", user: "\f007")
+  .icon-#{$name}::before
+    content: $glyph
+
+@for $i from 1 through 3
+  .m-#{$i}
+    margin: #{$i * 4}px
+
+@if $spacing > 1rem and not false
+  .spaced
+    gap: $spacing
+@else if $spacing == 0
+  .flush
+    gap: 0
+@else
+  .tight
+    gap: 0.25rem

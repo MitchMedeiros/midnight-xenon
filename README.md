@@ -30,10 +30,15 @@ In order to have consistent cross-language syntax highlighting, it is necessary 
 - Markdown
 - HTML
 - CSS
+- SCSS
+- Sass - [Sass (.sass only)](https://marketplace.visualstudio.com/items?itemName=syler.sass-indented) needed for highlighting
+- Less
 - JSON
 - XML
 - YAML
 - Shell (.sh, .bash)
+- PowerShell
+- SQL
 - .env - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) by mikestead recommended for full highlighting
 - .ini
 - .toml

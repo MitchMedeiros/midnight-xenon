@@ -35,7 +35,6 @@
 				"entity.name.function",
 				"entity.name.method",
 				"support.function",
-				"support.variable.magic.python",
 				"support.function.magic.python",
 				"storage.type.tag-handle.yaml",
 			],
@@ -53,6 +52,7 @@
 				"variable.other.readwrite",
 				"variable.other.constant",
 				"support.variable.magic.python",
+				"support.other.variable.less",
 				"variable.stable",
 				"variable.volatile",
 				"variable.function",
@@ -78,6 +78,8 @@
 				"constant.character",
 				"constant.escape",
 				"keyword.other.unit",
+				"keyword.control.unit.css.sass",
+				"support.keyword.repetitions.less",
 				"storage.type.primitive.java",
 			],
 			"settings": {
@@ -99,7 +101,6 @@
 			"name": "Flow/Import/Other Keyword",
 			"scope": [
 				"keyword.control.flow",
-				"keyword.operator.logical",
 				"keyword.other.import",
 				"keyword.control.import.python",
 				"keyword.control.java",
@@ -136,6 +137,7 @@
 			"name": "Logic Keyword",
 			"scope": [
 				"keyword.operator.logical",
+				"keyword.operator.logic.media.less",
 				"storage.modifier",
 			],
 			"settings": {
@@ -191,6 +193,8 @@
 				"comment.line.semicolon.ini",
 				"comment.line.double-dash.sql",
 				"punctuation.definition.comment.sql",
+				"comment.line.scss",
+				"comment.line.sass",
 				"comment.block.html",
 			],
 			"settings": {
@@ -254,7 +258,8 @@
 		{
 			"name": "Colors",
 			"scope": [
-				"constant.other.color"
+				"constant.other.color",
+				"constant.language.color.rgb-value.css.sass"
 			],
 			"settings": {
 				"foreground": "#ffffff"
@@ -523,22 +528,35 @@
 			}
 		},
 		{
-			"name": "CSS ID's",
-			"scope": [
-				"source.sass keyword.control"
-			],
-			"settings": {
-				"foreground": "#82AAFF"
-			}
-		},
-		{
 			"name": "CSS Keyword",
 			"scope": [
 				"keyword.other.important.css",
-				"entity.other.keyframe-offset.css"
+				"keyword.other.important.scss",
+				"keyword.other.important.less",
+				"keyword.other.default.scss",
+				"entity.other.keyframe-offset.css",
+				"keyword.other.keyframe-selector.less"
 			],
 			"settings": {
 				"foreground": "#22ADF8"
+			}
+		},
+		{
+			"name": "Sass Interpolation",
+			"scope": [
+				"support.function.interpolation.sass"
+			],
+			"settings": {
+				"foreground": "#88D5FF"
+			}
+		},
+		{
+			"name": "Sass Function Parenthesis",
+			"scope": [
+				"entity.name.function.close"
+			],
+			"settings": {
+				"foreground": "#D4D4D4"
 			}
 		},
 		{

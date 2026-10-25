@@ -1,0 +1,110 @@
+/* Block comment */
+// Line comment
+
+@import "base";
+
+@primary-color: #22adf8;
+@spacing: 1.5rem;
+@radius: 4px;
+
+.button {
+    margin: 0 auto;
+    padding: calc(@spacing * 2) @spacing;
+    color: @primary-color;
+    border: 1px solid fade(@primary-color, 50%);
+    border-radius: @radius;
+    transition: background-color 0.3s ease-in-out !important;
+    width: calc(100% - 2rem);
+
+    &:hover,
+    &.is-active {
+        background: lighten(@primary-color, 20%);
+    }
+}
+
+#main > a:visited span[lang="en"]::after {
+    content: "\2192";
+    font-family: "JetBrains Mono", monospace;
+}
+
+@media (min-width: 768px) and (prefers-color-scheme: dark) {
+    .button {
+        padding: @spacing;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/jetbrains-mono.woff2") format("woff2");
+}
+
+@supports (display: grid) {
+    .layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1em 2em;
+        transform: translateX(-10px) rotate(45deg);
+    }
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+// Less specific
+@plugin "my-plugin";
+
+@selector: ~".card";
+@property: color;
+@breakpoint: 992px;
+
+.bordered(@width: 2px; @style: solid) {
+    border: @width @style #333;
+}
+
+.mixin-guard(@c) when (iscolor(@c)) and (lightness(@c) > 50%) {
+    color: black;
+}
+
+#namespace {
+    .helper() {
+        margin: 0 auto;
+    }
+}
+
+@{selector} {
+    .bordered(1px; dashed);
+    #namespace > .helper();
+    padding: (@spacing * 2) @spacing;
+    @{property}: darken(@primary-color, 10%);
+    background+: url("images/bg-@{spacing}.png");
+    width: ~"calc(100% - @{spacing})";
+
+    &:extend(.base all);
+
+    @media (min-width: @breakpoint) {
+        width: percentage(0.5);
+    }
+}
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+    .col-@{i} {
+        width: (@i * 100% / @n);
+    }
+    .generate-columns(@n, (@i + 1));
+}
+
+@detached: {
+    background: red;
+};
+
+@var: `"hello".toUpperCase() + '!'`;
