@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.6.0]
+## [1.6.1]
 
 - Added syntax highlighting for SQL, shell, PowerShell, CSS, SCSS, Sass, Less, JavaScript, TypeScript, Go, Rust, C#,
   Lua, C, C++, Kotlin, Swift, PHP, and Ruby.
@@ -29,7 +29,7 @@
 
 - Initial release.
 
-[1.6.0]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.5.0...1.6.0
+[1.6.1]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.5.0...1.6.1
 [1.5.0]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.4.0...1.5.0
 [1.4.0]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.3.0...1.4.0
 [1.3.0]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.2.0...1.3.0
