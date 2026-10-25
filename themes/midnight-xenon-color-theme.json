@@ -3,6 +3,7 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"namespace:rust": "#30E5BE",
+		"label": "#88D5FF",
 		"*.mutable": {
 			"underline": false
 		}
@@ -36,6 +37,9 @@
 				"keyword.type.ulong.cs",
 				"keyword.type.ushort.cs",
 				"keyword.type.void.cs",
+				"storage.type.built-in",
+				"storage.type.integral",
+				"storage.type.return-type.lambda.cpp",
 			],
 			"settings": {
 				"foreground": "#30E5BE"
@@ -133,6 +137,7 @@
 				"variable.other.import.go",
 				"entity.name.module.rust",
 				"entity.name.type.namespace.cs",
+				"entity.name.scope-resolution",
 			],
 			"settings": {
 				"foreground": "#8F97FF"
@@ -153,6 +158,7 @@
 				"keyword.other.crate.rust",
 				"keyword.other.directive.using.cs",
 				"keyword.other.directive.static.cs",
+				"keyword.other.using.directive.cpp",
 				"keyword.preprocessor",
 				"meta.preprocessor.cs",
 				"punctuation.separator.hash.cs",
@@ -188,6 +194,10 @@
 				"keyword.var.go",
 				"keyword.other.fn.rust",
 				"keyword.other.rust",
+				"keyword.other.typedef",
+				"keyword.other.concept.cpp",
+				"keyword.other.operator.overload.cpp",
+				"keyword.other.default.destructor.cpp",
 				"keyword.local.lua",
 				"meta.function.lua keyword.control.lua",
 			],
@@ -204,6 +214,10 @@
 				"keyword.operator.logic.media.less",
 				"storage.modifier",
 				"keyword.control.loop.in.cs",
+				"keyword.operator.sizeof",
+				"keyword.operator.cast",
+				"keyword.operator.delete",
+				"keyword.operator.typeid",
 			],
 			"settings": {
 				"foreground": "#22ADF8"
@@ -228,11 +242,12 @@
 				"number",
 				"constant.numeric",
 				"storage.type.numeric.bigint",
-				"keyword.other.unit.binary.go",
-				"keyword.other.unit.octal.go",
-				"keyword.other.unit.hexadecimal.go",
+				"keyword.other.unit.binary",
+				"keyword.other.unit.octal",
+				"keyword.other.unit.hexadecimal",
+				"keyword.other.unit.exponent",
+				"keyword.other.unit.suffix",
 				"keyword.other.unit.imaginary.go",
-				"keyword.other.unit.exponent.decimal.go",
 				"keyword.operator.exponent.rust",
 				"keyword.operator.exponent.sign.rust",
 			],
@@ -282,6 +297,10 @@
 			"name": "Operator",
 			"scope": [
 				"keyword.operator",
+				"storage.modifier.pointer",
+				"storage.modifier.reference",
+				"storage.modifier.array",
+				"entity.name.operator.cpp",
 				"constant.language.import-export-all"
 			],
 			"settings": {
