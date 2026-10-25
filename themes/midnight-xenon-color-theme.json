@@ -119,6 +119,7 @@
 				"string.tag.lua",
 				"constant.enum.php",
 				"constant.other.php",
+				"constant.other.key.java",
 				"constant.other.class.php",
 				"constant.other.symbol.hashkey.parameter.function.ruby",
 			],
@@ -257,6 +258,7 @@
 				"keyword.operator.typeid",
 				"keyword.operator.type.php",
 				"keyword.operator.as.php",
+				"keyword.operator.instanceof.java",
 			],
 			"settings": {
 				"foreground": "#22ADF8"

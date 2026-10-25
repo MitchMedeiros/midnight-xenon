@@ -29,6 +29,15 @@ public class Test {
         return 2 * Math.PI * radius;
     }
 
+    @SuppressWarnings(value = "unchecked")
+    @Named(name = "shape", aliases = { "a", "b" })
+    public boolean isNamed(Object other) {
+        if (other instanceof Test test) {
+            return test.radius == radius;
+        }
+        return other instanceof String;
+    }
+
     public static void iterators() {
         int index = 0;
         while (index < 10) {
@@ -49,5 +58,6 @@ public class Test {
         Test circle = new Test(rad, color);
 
         System.out.println(circle.str());
+        List<String> names = List.of("a", "b").stream().map(String::toUpperCase).filter(s -> !s.isEmpty()).toList();
     }
 }

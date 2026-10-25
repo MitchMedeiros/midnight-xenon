@@ -1,6 +1,10 @@
 .vscode/**
 .github/**
 .vscode-test/**
+.mypy_cache/**
+.metals/**
+.scala-build/**
+.bsp/**
 assets/banner.*
 assets/language_logos/**
 assets/theme_examples/**
