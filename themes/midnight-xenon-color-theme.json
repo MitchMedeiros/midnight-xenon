@@ -1,13 +1,25 @@
 {
 	"name": "Midnight Xenon",
 	"semanticHighlighting": true,
-	"semanticTokenColors": {},
+	"semanticTokenColors": {
+		"namespace:rust": "#30E5BE",
+		"*.mutable": {
+			"underline": false
+		}
+	},
 	"tokenColors": [
 		{
 			"name": "Type",
 			"scope": [
 				"entity.name.type",
 				"support.type",
+				"storage.type.numeric.go",
+				"storage.type.string.go",
+				"storage.type.boolean.go",
+				"storage.type.error.go",
+				"storage.type.byte.go",
+				"storage.type.rune.go",
+				"storage.type.complex.go",
 			],
 			"settings": {
 				"foreground": "#30E5BE"
@@ -39,6 +51,7 @@
 				"meta.decorator variable.other.readwrite",
 				"support.function.magic.python",
 				"storage.type.tag-handle.yaml",
+				"meta.attribute.rust",
 			],
 			"settings": {
 				"foreground": "#FFFFA8"
@@ -70,6 +83,7 @@
 				"entity.name.tag.yaml",
 				"keyword.other.definition.ini",
 				"variable.other.env",
+				"constant.other.caps.rust",
 			],
 			"settings": {
 				"foreground": "#88D5FF"
@@ -97,6 +111,9 @@
 				"entity.name.namespace",
 				"entity.name.import",
 				"meta.import",
+				"entity.name.type.package.go",
+				"variable.other.import.go",
+				"entity.name.module.rust",
 			],
 			"settings": {
 				"foreground": "#8F97FF"
@@ -112,6 +129,9 @@
 				"keyword.control.throw",
 				"keyword.other.package.java",
 				"keyword.other.env",
+				"keyword.package.go",
+				"meta.use.rust keyword.other.rust",
+				"keyword.other.crate.rust",
 			],
 			"settings": {
 				"foreground": "#C586C0"
@@ -133,6 +153,16 @@
 				"keyword.control.new.java",
 				"storage.modifier.other",
 				"keyword.other.doctype.xml",
+				"keyword.channel.go",
+				"keyword.const.go",
+				"keyword.function.go",
+				"keyword.interface.go",
+				"keyword.map.go",
+				"keyword.struct.go",
+				"keyword.type.go",
+				"keyword.var.go",
+				"keyword.other.fn.rust",
+				"keyword.other.rust",
 			],
 			"settings": {
 				"foreground": "#22ADF8"
@@ -157,6 +187,7 @@
 				"variable.parameter.function.language.special.self",
 				"variable.language.scala",
 				"variable.language.this",
+				"variable.language.self.rust",
 			],
 			"settings": {
 				"foreground": "#B9CEDA",
@@ -168,6 +199,13 @@
 				"number",
 				"constant.numeric",
 				"storage.type.numeric.bigint",
+				"keyword.other.unit.binary.go",
+				"keyword.other.unit.octal.go",
+				"keyword.other.unit.hexadecimal.go",
+				"keyword.other.unit.imaginary.go",
+				"keyword.other.unit.exponent.decimal.go",
+				"keyword.operator.exponent.rust",
+				"keyword.operator.exponent.sign.rust",
 			],
 			"settings": {
 				"foreground": "#B5CEA8"
@@ -204,6 +242,7 @@
 				"comment.line.scss",
 				"comment.line.sass",
 				"comment.block.html",
+				"comment.line.documentation.rust",
 			],
 			"settings": {
 				"foreground": "#60737D"
@@ -224,7 +263,8 @@
 			"scope": [
 				"punctuation.separator",
 				"punctuation.section",
-				"punctuation.separator.key-value.ini"
+				"punctuation.separator.key-value.ini",
+				"meta.import.rust punctuation.semi.rust",
 			],
 			"settings": {
 				"foreground": "#D4D4D4"

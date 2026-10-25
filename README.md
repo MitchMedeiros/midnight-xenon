@@ -27,6 +27,8 @@ The extensions used when creating the theme are listed below if they do not come
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/scala.png" width="17"> Scala                       | [Metals](https://marketplace.visualstudio.com/items?itemName=scalameta.metals)                                                                                         |
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/javascript.png" width="17"> JavaScript (.js, .jsx) | -                                                                                                                                                                      |
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/typescript.png" width="17"> TypeScript (.ts, .tsx) | -                                                                                                                                                                      |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/go.png" width="17"> Go                             | [Go](https://marketplace.visualstudio.com/items?itemName=golang.go)                                                                                                    |
+| <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/rust.png" width="17"> Rust                         | [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)                                                                           |
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/html.png" width="17"> HTML                         | -                                                                                                                                                                      |
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/css.png" width="17"> CSS                           | -                                                                                                                                                                      |
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/shell.png" width="17"> Shell (.sh, .bash)          | -                                                                                                                                                                      |
@@ -79,8 +81,6 @@ Add consistent highlighting for:
 
 - C
 - C++
-- Go
-- Rust
 - Lua
 
 ## Credits
