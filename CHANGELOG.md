@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.6.3]
+
+- Fixed the VS Code installs badge in the README.
+
 ## [1.6.2]
 
 - Improved Marketplace discoverability.
@@ -33,6 +37,7 @@
 
 - Initial release.
 
+[1.6.3]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.6.2...1.6.3
 [1.6.2]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.6.1...1.6.2
 [1.6.1]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.5.0...1.6.1
 [1.5.0]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.4.0...1.5.0

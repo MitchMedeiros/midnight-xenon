@@ -4,7 +4,7 @@
 <p align="center">
   <a href="https://open-vsx.org/extension/MitchellMedeiros/midnight-xenon"><img alt="Version" src="https://img.shields.io/open-vsx/v/MitchellMedeiros/midnight-xenon?label=Version"></a>
   <a href="https://open-vsx.org/extension/MitchellMedeiros/midnight-xenon"><img alt="Open VSX Installs" src="https://img.shields.io/open-vsx/dt/MitchellMedeiros/midnight-xenon?label=Open%20VSX%20Installs"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=MitchellMedeiros.midnight-xenon"><img alt="VS Code Installs" src="https://img.shields.io/visual-studio-marketplace/i/MitchellMedeiros.midnight-xenon?label=VS%20Code%20Installs"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=MitchellMedeiros.midnight-xenon"><img alt="VS Code Installs" src="https://vsmarketplacebadges.dev/installs-short/MitchellMedeiros.midnight-xenon.png?label=VS%20Code%20Installs"></a>
 </p>
 Enhances the popular Dark Modern and Dark+ themes from VS Code through:
 

@@ -12,7 +12,7 @@
     "theme": "dark"
   },
   "license": "MIT",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "engines": {
     "vscode": "^1.12.0"
   },
