@@ -4,6 +4,7 @@
 	"semanticTokenColors": {
 		"namespace:rust": "#30E5BE",
 		"label": "#88D5FF",
+		"identifier:swift": "#88D5FF",
 		"*.mutable": {
 			"underline": false
 		}
@@ -72,6 +73,10 @@
 				"support.function.magic.python",
 				"storage.type.tag-handle.yaml",
 				"meta.attribute.rust",
+				"meta.attribute.swift",
+				"storage.modifier.attribute.swift",
+				"punctuation.definition.attribute.swift",
+				"entity.name.type.annotation.kotlin",
 			],
 			"settings": {
 				"foreground": "#FFFFA8"
@@ -138,6 +143,8 @@
 				"entity.name.module.rust",
 				"entity.name.type.namespace.cs",
 				"entity.name.scope-resolution",
+				"meta.import.swift entity.name.type.swift",
+				"entity.name.package.kotlin",
 			],
 			"settings": {
 				"foreground": "#8F97FF"
@@ -163,6 +170,11 @@
 				"meta.preprocessor.cs",
 				"punctuation.separator.hash.cs",
 				"keyword.operator.expression.await.cs",
+				"meta.preprocessor.conditional.swift",
+				"punctuation.definition.preprocessor.swift",
+				"keyword.hard.package.kotlin",
+				"meta.import.kotlin keyword.soft.kotlin",
+				"meta.import.kotlin keyword.hard.kotlin",
 			],
 			"settings": {
 				"foreground": "#C586C0"
@@ -195,6 +207,11 @@
 				"keyword.other.fn.rust",
 				"keyword.other.rust",
 				"keyword.other.typedef",
+				"keyword.other.declaration-specifier",
+				"keyword.other.generic-constraint-introducer.swift",
+				"keyword.other.operator.type.opaque.swift",
+				"keyword.hard",
+				"keyword.soft",
 				"keyword.other.concept.cpp",
 				"keyword.other.operator.overload.cpp",
 				"keyword.other.default.destructor.cpp",
@@ -231,6 +248,7 @@
 				"variable.language.this",
 				"variable.language.self.rust",
 				"variable.language.self.lua",
+				"variable.language.swift",
 			],
 			"settings": {
 				"foreground": "#B9CEDA",
@@ -288,6 +306,7 @@
 				"comment.block.html",
 				"comment.line.documentation.rust",
 				"comment.line.double-dash.lua",
+				"comment.line.triple-slash.documentation.swift",
 			],
 			"settings": {
 				"foreground": "#60737D"
@@ -301,6 +320,7 @@
 				"storage.modifier.reference",
 				"storage.modifier.array",
 				"entity.name.operator.cpp",
+				"storage.type.function.arrow.kotlin",
 				"constant.language.import-export-all"
 			],
 			"settings": {
