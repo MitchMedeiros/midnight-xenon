@@ -8,7 +8,7 @@
   "publisher": "MitchellMedeiros",
   "icon": "assets/logo.png",
   "license": "MIT",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "engines": {
     "vscode": "^1.12.0"
   },

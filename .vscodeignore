@@ -3,6 +3,7 @@
 assets/language_logos/**
 assets/theme_examples/**
 AGENTS.md
+publishing.md
 .husky/**
 .editorconfig
 .prettierignore
