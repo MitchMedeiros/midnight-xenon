@@ -1,0 +1,38 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Verify tag matches package version
+        run: test "$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
+
+      - run: npm run check
+
+      - run: npx vsce package --out midnight-xenon.vsix
+
+      - name: Publish to VS Code Marketplace
+        run: npx vsce publish --packagePath midnight-xenon.vsix
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: Publish to Open VSX
+        run: npx ovsx publish midnight-xenon.vsix --trusted-publishing
