@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="280" viewBox="0 0 1000 280">
+  <rect x="1" y="1" width="998" height="278" rx="18" fill="#181b20" stroke="#2a313a" stroke-width="2"/>
+  <image href="logo.png" xlink:href="logo.png" x="64" y="46" width="150" height="150"/>
+  <text x="250" y="130" font-family="JetBrains Mono" font-size="70" font-weight="300" fill="#dddddd">Midnight <tspan fill="#22adf8">Xenon</tspan></text>
+  <text x="254" y="172" font-family="JetBrains Mono" font-size="21" font-weight="300" fill="#b9ceda">Consistent syntax highlighting with a dark UI</text>
+  <g>
+    <rect x="58" y="228" width="70" height="12" rx="4" fill="#30e5be"/>
+    <rect x="132" y="228" width="70" height="12" rx="4" fill="#ffffa8"/>
+    <rect x="206" y="228" width="70" height="12" rx="4" fill="#88d5ff"/>
+    <rect x="280" y="228" width="70" height="12" rx="4" fill="#aeff7f"/>
+    <rect x="354" y="228" width="70" height="12" rx="4" fill="#8f97ff"/>
+    <rect x="428" y="228" width="70" height="12" rx="4" fill="#c586c0"/>
+    <rect x="502" y="228" width="70" height="12" rx="4" fill="#22adf8"/>
+    <rect x="576" y="228" width="70" height="12" rx="4" fill="#b9ceda"/>
+    <rect x="650" y="228" width="70" height="12" rx="4" fill="#b5cea8"/>
+    <rect x="724" y="228" width="70" height="12" rx="4" fill="#eebc70"/>
+    <rect x="798" y="228" width="70" height="12" rx="4" fill="#60737d"/>
+    <rect x="872" y="228" width="70" height="12" rx="4" fill="#d4d4d4"/>
+  </g>
+</svg>

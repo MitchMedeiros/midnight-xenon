@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.6.2]
+
+- Improved Marketplace discoverability.
+
 ## [1.6.1]
 
 - Added syntax highlighting for SQL, shell, PowerShell, CSS, SCSS, Sass, Less, JavaScript, TypeScript, Go, Rust, C#,
@@ -29,6 +33,7 @@
 
 - Initial release.
 
+[1.6.2]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.6.1...1.6.2
 [1.6.1]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.5.0...1.6.1
 [1.5.0]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.4.0...1.5.0
 [1.4.0]: https://github.com/MitchMedeiros/midnight-xenon/compare/1.3.0...1.4.0

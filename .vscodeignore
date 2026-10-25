@@ -1,5 +1,7 @@
 .vscode/**
+.github/**
 .vscode-test/**
+assets/banner.*
 assets/language_logos/**
 assets/theme_examples/**
 AGENTS.md

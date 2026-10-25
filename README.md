@@ -1,12 +1,18 @@
-# Midnight Xenon Theme
+<p align="center">
+  <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/banner.png" width="800" alt="Midnight Xenon Theme">
+</p>
+<p align="center">
+  <a href="https://open-vsx.org/extension/MitchellMedeiros/midnight-xenon"><img alt="Version" src="https://img.shields.io/open-vsx/v/MitchellMedeiros/midnight-xenon?label=Version"></a>
+  <a href="https://open-vsx.org/extension/MitchellMedeiros/midnight-xenon"><img alt="Open VSX Installs" src="https://img.shields.io/open-vsx/dt/MitchellMedeiros/midnight-xenon?label=Open%20VSX%20Installs"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=MitchellMedeiros.midnight-xenon"><img alt="VS Code Installs" src="https://vsmarketplacebadges.dev/installs-short/MitchellMedeiros.midnight-xenon.svg?label=VS%20Code%20Installs"></a>
+</p>
+Enhances the popular Dark Modern and Dark+ themes from VS Code through:
 
-Maintains similar syntax highlighting as the default Dark Modern and Dark+ themes while:
+- improved cross-language consistency for syntax highlighting, with semantic highlighting enabled
+- reduced sharing of syntax colors for distinctly different code elements
+- a more minimalistic UI with blue rather than brown undertones
 
-- Improving the cross-language consistency of syntax highlighting with semantic highlighting enabled
-- Reducing the sharing of colors between distinctly different code elements
-- Providing a more minimalistic UI with blue rather than brown undertones
-
-## Theme Example Photos
+## Syntax Highlighting
 
 **Minimal UI:**
 
@@ -16,9 +22,7 @@ Maintains similar syntax highlighting as the default Dark Modern and Dark+ theme
 
 ![Full UI](https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/theme_examples/python_full_ui.png)
 
-## Syntax Highlighting
-
-The extensions used when creating the theme are listed below if they do not come built-in. Each LSP can tokenize and assign names to text differently, so for best results you should use them for the file types you care about. Generally, they are the most popular option available. The Open VSX column is used by VS Code forks such as VSCodium and the VS Code column links to the Visual Studio Marketplace.
+The extensions used when creating the theme are listed below if they do not come built-in. Each LSP can tokenize and assign names to text differently, so for best results you should use them for the file types you care about. Generally, they are the most popular option available.
 
 | Language                                                                                                                           | Open VSX Extension                                                                  | VS Code Extension                                                                                                                                                                      |
 | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,7 +60,7 @@ The extensions used when creating the theme are listed below if they do not come
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/sass.png" width="17"> Sass (.sass)                 | [Sass (.sass only)](https://open-vsx.org/extension/syler/sass-indented)             | [Sass (.sass only)](https://marketplace.visualstudio.com/items?itemName=syler.sass-indented)                                                                                           |
 | <img src="https://d1nheu3uhuz51e.cloudfront.net/dark-xenon-theme/language_logos/less.png" width="17"> Less                         | -                                                                                   | -                                                                                                                                                                                      |
 
-Files not listed will still get the theme's general highlighting for comments, strings, numbers, keywords, functions and types. General coverage will just be less consistent but you can always extend this through your personal settings file or creating a PR!
+Files not listed will still get highlighting for comments, strings, numbers, keywords, functions and types. Coverage may be less complete but you can always extend this through your settings file or creating a PR!
 
 ### Syntax Color Palette
 
